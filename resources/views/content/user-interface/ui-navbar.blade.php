@@ -38,7 +38,6 @@
           <a class="nav-link disabled" href="javascript:void(0)" tabindex="-1">Disabled</a>
         </li>
       </ul>
-     
     </div>
   </div>
 </nav>
