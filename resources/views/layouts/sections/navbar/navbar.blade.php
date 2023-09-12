@@ -16,7 +16,7 @@ $navbarDetached = ($navbarDetached ?? '');
       <div class="navbar-brand app-brand demo d-none d-xl-flex py-0 me-4">
         <a href="{{url('/')}}" class="app-brand-link gap-2">
           <span class="app-brand-logo demo">
-            @include('_partials.macros',["width"=>25,"withbg"=>'#696cff'])
+            @include('_partials.macros',["width"=>48,"withbg"=>'#696cff'])
           </span>
           <span class="app-brand-text demo menu-text fw-bolder">{{config('variables.templateName')}}</span>
         </a>
@@ -27,22 +27,26 @@ $navbarDetached = ($navbarDetached ?? '');
         <ul class="navbar-nav flex-row align-items-center ms-auto">
 
         <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 2rem; color: rgb(86, 106, 127);">SOBRE</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 1.5rem; color: rgb(86, 106, 127);">SOBRE</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 2rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 1.5rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 2rem; color: rgb(86, 106, 127);">SOBRE</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 1.5rem; color: rgb(86, 106, 127);">SOBRE</a>
           </li>
           <li class="nav-item lh-1 me-6">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 2rem; color: rgb(86, 106, 127);">CONTATO</a>
+              <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 1.5rem; color: rgb(86, 106, 127);">CONTATO</a>
           </li>
           <li class="nav-item lh-1 me-6">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 2rem; color: rgb(86, 106, 127);">QUERO ADOTAR</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" type="button" class="btn rounded-pill btn-outline-primary">
+              Quero Adotar
+            </a>
           </li>
           <li class="nav-item lh-1 me-6">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 2rem; color: rgb(86, 106, 127);">LOGIN</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" type="button" class="btn btn-primary" data-size="large" style="margin: 1.5rem;">
+              Login
+            </a>
           </li>
 
           <!-- User -->
