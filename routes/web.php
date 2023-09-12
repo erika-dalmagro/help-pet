@@ -40,6 +40,10 @@ Route::get('/auth/forgot-password-basic', $controller_path . '\authentications\F
 // cards
 Route::get('/cards/basic', $controller_path . '\cards\CardBasic@index')->name('cards-basic');
 
+// Sobre
+Route::get('/sobre',  $controller_path . '\sobre\SobreController@index')->name('sobreTeste');
+
+
 // User Interface
 Route::get('/ui/accordion', $controller_path . '\user_interface\Accordion@index')->name('ui-accordion');
 Route::get('/ui/alerts', $controller_path . '\user_interface\Alerts@index')->name('ui-alerts');
