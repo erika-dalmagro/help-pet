@@ -27,29 +27,30 @@ $navbarDetached = ($navbarDetached ?? '');
         <ul class="navbar-nav flex-row align-items-center ms-auto">
 
         <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 1.5rem; color: rgb(86, 106, 127);">SOBRE</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 1.5rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="margin: 1rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 1.5rem; color: rgb(86, 106, 127);">SOBRE</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
           </li>
           <li class="nav-item lh-1 me-6">
-              <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" data-size="large" style="margin: 1.5rem; color: rgb(86, 106, 127);">CONTATO</a>
+              <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="margin: 1rem; color: rgb(86, 106, 127);">CONTATO</a>
           </li>
           <li class="nav-item lh-1 me-6">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" type="button" class="btn rounded-pill btn-outline-primary">
-              Quero Adotar
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" type="button" class="btn rounded-pill btn-outline-primary" style="margin: 1rem;">
+              QUERO ADOTAR
             </a>
           </li>
           <li class="nav-item lh-1 me-6">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" type="button" class="btn btn-primary" data-size="large" style="margin: 1.5rem;">
-              Login
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" type="button" class="btn rounded-pill btn-primary" style="margin: 1rem;">
+              LOGIN
             </a>
           </li>
 
           <!-- User -->
+          <!-- 
           <li class="nav-item navbar-dropdown dropdown-user dropdown">
             <a class="nav-link dropdown-toggle hide-arrow" href="javascript:void(0);" data-bs-toggle="dropdown">
               <div class="avatar avatar-online">
@@ -107,12 +108,9 @@ $navbarDetached = ($navbarDetached ?? '');
               </li>
             </ul>
           </li>
+          -->
           <!--/ User -->
         </ul>
       </div>
-
-      @if(!isset($navbarDetached))
-    </div>
-    @endif
   </nav>
   <!-- / Navbar -->
