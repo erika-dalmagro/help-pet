@@ -27,24 +27,24 @@ $navbarDetached = ($navbarDetached ?? '');
         <ul class="navbar-nav flex-row align-items-center ms-auto">
 
         <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="margin: 1rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
           </li>
           <li class="nav-item lh-1 me-6">
-              <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="margin: 1rem; color: rgb(86, 106, 127);">CONTATO</a>
+              <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">CONTATO</a>
           </li>
           <li class="nav-item lh-1 me-6">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" type="button" class="btn rounded-pill btn-outline-primary" style="margin: 1rem;">
+            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free"  style="font-size: 15px; margin: 1rem;" type="button" class="btn rounded-pill btn-outline-primary">
               QUERO ADOTAR
             </a>
           </li>
           <li class="nav-item lh-1 me-6">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" type="button" class="btn rounded-pill btn-primary" style="margin: 1rem;">
+            <a href="auth/login-basic" type="button" class="btn rounded-pill btn-primary" style="font-size: 15px; margin: 1rem;">
               LOGIN
             </a>
           </li>
