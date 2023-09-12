@@ -75,7 +75,7 @@ $navbarHideToggle = false;
 <h6 class="pb-1 mb-4 text-muted">Um pouco mais....</h6>
 <div class="card-group mb-5">
   <div class="card">
-    <img class="card-img-top" src="{{asset('assets/img/elements/4.jpg')}}" alt="Card image cap" />
+    <img class="card-img-top" src="{{asset('assets/img/elements/dog.png')}}" alt="Card image cap" />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">
@@ -89,7 +89,7 @@ $navbarHideToggle = false;
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="{{asset('assets/img/elements/5.jpg')}}" alt="Card image cap" />
+    <img class="card-img-top" src="{{asset('assets/img/elements/pig.png')}}" alt="Card image cap" />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -99,7 +99,7 @@ $navbarHideToggle = false;
     </div>
   </div>
   <div class="card">
-    <img class="card-img-top" src="{{asset('assets/img/elements/1.jpg')}}" alt="Card image cap" />
+    <img class="card-img-top" src="{{asset('assets/img/elements/cat.png')}}" alt="Card image cap" />
     <div class="card-body">
       <h5 class="card-title">Card title</h5>
       <p class="card-text">
