@@ -27,10 +27,10 @@ $navbarDetached = ($navbarDetached ?? '');
         <ul class="navbar-nav flex-row align-items-center ms-auto">
 
         <li class="nav-item lh-1 me-3">
-            <a href="/sobre" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
+            <a href="/" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
+            <a href="/sobre" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
           </li>
           <li class="nav-item lh-1 me-3">
             <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>

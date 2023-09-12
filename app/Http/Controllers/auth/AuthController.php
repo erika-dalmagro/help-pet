@@ -1,6 +1,6 @@
 <?php
-namespace App\Http\Controllers;
-
+namespace App\Http\Controllers\auth;
+use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\User;
 use App\Models\Pet;
@@ -34,7 +34,7 @@ class AuthController extends Controller
         } else {
             $erro = true;
             return view('auth.login', compact('erro'));
-            die();
+          
         }
     }
 

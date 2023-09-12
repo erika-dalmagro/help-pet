@@ -82,3 +82,13 @@ Route::get('/form/layouts-horizontal', $controller_path . '\form_layouts\Horizon
 
 // tables
 Route::get('/tables/basic', $controller_path . '\tables\Basic@index')->name('tables-basic');
+
+
+
+
+
+// Usuários/login
+Route::get('/login', [App\Http\Controllers\auth\AuthController::class, 'index'])->name('auth.login');
+Route::get('/logout', [App\Http\Controllers\auth\AuthController::class, 'logout'])->name('logout');
+Route::get('/register', [App\Http\Controllers\auth\AuthController::class, 'register'])->name('register');
+Route::post('/autenticar', [App\Http\Controllers\auth\AuthController::class, 'autenticar'])->name('autenticar');
