@@ -72,14 +72,14 @@ $navbarHideToggle = false;
   </div>
 </div>
 
-<h6 class="pb-1 mb-4 text-muted">Aqui você vai ecncontrar: <h6>
+<h6 class="pb-1 mb-4 text-muted">Aqui você pode encontrar: <h6>
 
 <!-- Grid Card -->
 
 <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
   <div class="col">
     <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/2.jpg')}}" alt="Card image cap" />
+      <img class="card-img-top" src="{{asset('assets/img/elements/calopsita.png')}}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -88,7 +88,7 @@ $navbarHideToggle = false;
   </div>
   <div class="col">
     <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/13.jpg')}}" alt="Card image cap" />
+      <img class="card-img-top" src="{{asset('assets/img/elements/india.png')}}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -97,7 +97,7 @@ $navbarHideToggle = false;
   </div>
   <div class="col">
     <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/4.jpg')}}" alt="Card image cap" />
+      <img class="card-img-top" src="{{asset('assets/img/elements/hamster.png')}}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
@@ -106,7 +106,7 @@ $navbarHideToggle = false;
   </div>
   <div class="col">
     <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/18.jpg')}}" alt="Card image cap" />
+      <img class="card-img-top" src="{{asset('assets/img/elements/pig.png')}}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -115,7 +115,7 @@ $navbarHideToggle = false;
   </div>
   <div class="col">
     <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/19.jpg')}}" alt="Card image cap" />
+      <img class="card-img-top" src="{{asset('assets/img/elements/dog.png')}}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -124,7 +124,7 @@ $navbarHideToggle = false;
   </div>
   <div class="col">
     <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/20.jpg')}}" alt="Card image cap" />
+      <img class="card-img-top" src="{{asset('assets/img/elements/cat.png')}}" alt="Card image cap" />
       <div class="card-body">
         <h5 class="card-title">Card title</h5>
         <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -134,7 +134,7 @@ $navbarHideToggle = false;
 </div>
 
 
-<h6 class="pb-1 mb-4 text-muted">E MUITO MAIS! <h6>
+<h6 class="pb-1 mb-4 text-muted">Todos esperando por muito amor e carinho! <h6>
 <!--/ Layout Demo -->
 
 @endsection
