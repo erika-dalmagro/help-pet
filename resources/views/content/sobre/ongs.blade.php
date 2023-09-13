@@ -28,9 +28,7 @@ $navbarHideToggle = false;
           <div class="card-body">
             <h5 class="card-title">ONG Patas e Focinhos</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content
-              is a
-              little bit longer.
+             Uma das organizações mais antigas de Bento Gonçalves e trabalha diariamente no resgate e cuidado dos animais abandonados. Atualmente (07/07/2023), a entidade está com 21 cachorros e 22 gatos para adoção, entre filhotes e adultos, todos vacinados e castrados.
             </p>
             <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
           </div>
@@ -45,9 +43,8 @@ $navbarHideToggle = false;
           <div class="card-body">
             <h5 class="card-title">Samu Pet</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content
-              is a
-              little bit longer.
+            Serviço de urgência e emergência para animais vítimas de maus tratos ou atropelamentos. 
+            Os animais resgatados passam por tratamento veterinário através do trabalho de duas médicas veterinárias, e os casos mais críticos são encaminhados para clínicas conveniadas do poder público municipal.
             </p>
             <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
           </div>
@@ -67,15 +64,14 @@ $navbarHideToggle = false;
     <div class="card mb-3">
       <div class="row g-0">
         <div class="col-md-4">
-          <img class="card-img card-img-left" src="{{asset('assets/img/elements/12.jpg')}}" alt="Card image" />
+          <img class="card-img card-img-left" style="width: 150px; height: 150px; position: relative; top: 20px; left: 20px;"  src="{{asset('assets/img/elements/czz.png')}}" alt="Card image" />
         </div>
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">Centro de Controle de Zoonoses (CCZ) de Bento Gonçalves</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content
-              is a
-              little bit longer.
+            Órgão municipal responsável pelo controle de doenças de animais, 
+            e está habilitado para recolher animais que estejam doentes ou sejam um risco para os habitantes.
             </p>
             <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
           </div>
@@ -88,17 +84,16 @@ $navbarHideToggle = false;
       <div class="row g-0">
         <div class="col-md-8">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title">APABG - Associação Voluntária de Proteção Animal</h5>
             <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content
-              is a
-              little bit longer.
+            A APABG é uma entidade sem fins lucrativos formada por voluntários que atuam de forma anônima em defesa do bem-estar 
+            dos animais. Há projetos da comunidade para convivência harmônica com os animais e a natureza.
             </p>
             <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
           </div>
         </div>
         <div class="col-md-4">
-          <img class="card-img card-img-right" src="{{asset('assets/img/elements/17.jpg')}}" alt="Card image" />
+          <img class="card-img card-img-right" style="width: 150px; height: 150px; position: relative; top: 20px; left: 20px;"  src="{{asset('assets/img/elements/apabg.png')}}" alt="Card image" />
         </div>
       </div>
     </div>
@@ -106,48 +101,4 @@ $navbarHideToggle = false;
 </div>
 <!--/ Horizontal -->
 
-<!-- Horizontal -->
-<div class="row mb-5">
-  <div class="col-md">
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img class="card-img card-img-left" src="{{asset('assets/img/elements/12.jpg')}}" alt="Card image" />
-        </div>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content
-              is a
-              little bit longer.
-            </p>
-            <a href="javascript:void(0)" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md">
-    <div class="card mb-3">
-      <div class="row g-0">
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              This is a wider card with supporting text below as a natural lead-in to additional content. This content
-              is a
-              little bit longer.
-            </p>
-            <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <img class="card-img card-img-right" src="{{asset('assets/img/elements/17.jpg')}}" alt="Card image" />
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<!--/ Horizontal -->
 @endsection

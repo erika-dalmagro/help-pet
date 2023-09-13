@@ -30,16 +30,16 @@ $navbarDetached = ($navbarDetached ?? '');
             <a href="/" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="/sobre" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
+            <a href="/ongs" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">ONG PARCEIRAS</a>
           </li>
           <li class="nav-item lh-1 me-3">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">SOBRE</a>
+            <a href="/como-funciona" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">COMO FUNCIONA</a>
           </li>
           <li class="nav-item lh-1 me-6">
-              <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">CONTATO</a>
+              <a href="" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">CONTATO</a>
           </li>
           <li class="nav-item lh-1 me-6">
-            <a href="https://github.com/themeselection/sneat-html-laravel-admin-template-free"  style="font-size: 15px; margin: 1rem;" type="button" class="btn rounded-pill btn-outline-primary">
+            <a href=""  style="font-size: 15px; margin: 1rem;" type="button" class="btn rounded-pill btn-outline-primary">
               QUERO ADOTAR
             </a>
           </li>

@@ -92,3 +92,7 @@ Route::get('/login', [App\Http\Controllers\auth\AuthController::class, 'index'])
 Route::get('/logout', [App\Http\Controllers\auth\AuthController::class, 'logout'])->name('logout');
 Route::get('/register', [App\Http\Controllers\auth\AuthController::class, 'register'])->name('register');
 Route::post('/autenticar', [App\Http\Controllers\auth\AuthController::class, 'autenticar'])->name('autenticar');
+
+// Como Funciona
+Route::get('/ongs',  $controller_path . '\sobre\SobreController@index')->name('ongs');
+Route::get('/como-funciona',  $controller_path . '\sobre\SobreController@comoFunciona')->name('comoFunciona');
