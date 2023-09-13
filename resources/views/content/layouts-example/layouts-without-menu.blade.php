@@ -5,7 +5,7 @@ $navbarHideToggle = false;
 
 @extends('layouts/contentNavbarLayout')
 
-@section('title', 'Without menu - Layouts')
+@section('title', 'Sobre')
 
 @section('content')
 
@@ -72,48 +72,69 @@ $navbarHideToggle = false;
   </div>
 </div>
 
-<h6 class="pb-1 mb-4 text-muted">Um pouco mais....</h6>
-<div class="card-group mb-5">
-  <div class="card">
-    <img class="card-img-top" src="{{asset('assets/img/elements/dog.png')}}" alt="Card image cap" />
-    <div class="card-body">
-      <h5 class="card-title">Cachorrinhos</h5>
-      <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This content is a
-        little
-        bit longer.
-      </p>
-    </div>
-    <div class="card-footer">
-      
+<h6 class="pb-1 mb-4 text-muted">Aqui você vai ecncontrar: <h6>
+
+<!-- Grid Card -->
+
+<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+  <div class="col">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{asset('assets/img/elements/2.jpg')}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="{{asset('assets/img/elements/pig.png')}}" alt="Card image cap" />
-    <div class="card-body">
-      <h5 class="card-title">Porquinhos</h5>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      
+  <div class="col">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{asset('assets/img/elements/13.jpg')}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="{{asset('assets/img/elements/cat.png')}}" alt="Card image cap" />
-    <div class="card-body">
-      <h5 class="card-title">Gatinhos</h5>
-      <p class="card-text">
-        This is a wider card with supporting text below as a natural lead-in to additional content. This card has even
-        longer
-        content than the first to show that equal height action.
-      </p>
+  <div class="col">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{asset('assets/img/elements/4.jpg')}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+      </div>
     </div>
-    <div class="card-footer">
-      
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{asset('assets/img/elements/18.jpg')}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{asset('assets/img/elements/19.jpg')}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img class="card-img-top" src="{{asset('assets/img/elements/20.jpg')}}" alt="Card image cap" />
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      </div>
     </div>
   </div>
 </div>
 
+
+<h6 class="pb-1 mb-4 text-muted">E MUITO MAIS! <h6>
 <!--/ Layout Demo -->
 
 @endsection
