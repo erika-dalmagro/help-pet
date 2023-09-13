@@ -22,7 +22,7 @@ $navbarHideToggle = false;
     <div class="card mb-3">
       <div class="row g-0">
         <div class="col-md-4">
-          <img class="card-img card-img-left" style="width: 150px; height: 150px; position: relative; top: 20px; left: 20px;" src="{{asset('assets/img/elements/logo_patas_e_focinhos.png')}}" alt="Card image" />
+          <img class="card-img card-img-left" style="width: 150px; height: 150px; position: relative; top: 36px; left: 20px;" src="{{asset('assets/img/elements/logo_patas_e_focinhos.png')}}" alt="Card image" />
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -50,7 +50,7 @@ $navbarHideToggle = false;
           </div>
         </div>
         <div class="col-md-4">
-          <img class="card-img card-img-right" style="width: 150px; height: 150px; position: relative; top: 20px; left: 20px;"  src="{{asset('assets/img/elements/samu.png')}}" alt="Card image" />
+          <img class="card-img card-img-right" style="width: 150px; height: 150px; position: relative; top: 36px; left: 20px;"  src="{{asset('assets/img/elements/samu.png')}}" alt="Card image" />
         </div>
       </div>
     </div>
@@ -64,7 +64,7 @@ $navbarHideToggle = false;
     <div class="card mb-3">
       <div class="row g-0">
         <div class="col-md-4">
-          <img class="card-img card-img-left" style="width: 150px; height: 150px; position: relative; top: 20px; left: 20px;"  src="{{asset('assets/img/elements/czz.png')}}" alt="Card image" />
+          <img class="card-img card-img-left" style="width: 150px; height: 150px; position: relative; top: 36px; left: 20px;"  src="{{asset('assets/img/elements/czz.png')}}" alt="Card image" />
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -93,7 +93,7 @@ $navbarHideToggle = false;
           </div>
         </div>
         <div class="col-md-4">
-          <img class="card-img card-img-right" style="width: 150px; height: 150px; position: relative; top: 20px; left: 20px;"  src="{{asset('assets/img/elements/apabg.png')}}" alt="Card image" />
+          <img class="card-img card-img-right" style="width: 150px; height: 150px; position: relative; top: 36px; left: 20px;"  src="{{asset('assets/img/elements/apabg.png')}}" alt="Card image" />
         </div>
       </div>
     </div>

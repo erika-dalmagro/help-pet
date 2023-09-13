@@ -15,8 +15,6 @@ use Illuminate\Support\Facades\Route;
 
 $controller_path = 'App\Http\Controllers';
 
-// Main Page Route
-Route::get('/', $controller_path . '\layouts\WithoutMenu@index')->name('layouts-without-menu');
    
 // layout
 Route::get('/layouts/without-menu', $controller_path . '\layouts\WithoutMenu@index')->name('layouts-without-menu');
@@ -86,6 +84,8 @@ Route::get('/tables/basic', $controller_path . '\tables\Basic@index')->name('tab
 
 
 
+// Main Page Route
+Route::get('/', $controller_path . '\sobre\SobreController@index')->name('sobre');
 
 // Usuários/login
 Route::get('/login', [App\Http\Controllers\auth\AuthController::class, 'index'])->name('auth.login');
@@ -94,5 +94,6 @@ Route::get('/register', [App\Http\Controllers\auth\AuthController::class, 'regis
 Route::post('/autenticar', [App\Http\Controllers\auth\AuthController::class, 'autenticar'])->name('autenticar');
 
 // Como Funciona
-Route::get('/ongs',  $controller_path . '\sobre\SobreController@index')->name('ongs');
+Route::get('/ongs',  $controller_path . '\sobre\SobreController@ongs')->name('ongs');
 Route::get('/como-funciona',  $controller_path . '\sobre\SobreController@comoFunciona')->name('comoFunciona');
+//Route::get('/sobre',  $controller_path . '\sobre\SobreController@sobre')->name('sobre');

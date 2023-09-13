@@ -9,6 +9,10 @@ class SobreController extends Controller
 {
   public function index()
   {
+    return view('content.sobre.sobre');
+  }
+  public function ongs()
+  {
     return view('content.sobre.ongs');
   }
 
