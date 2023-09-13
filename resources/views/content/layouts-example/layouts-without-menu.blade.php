@@ -59,82 +59,81 @@ $navbarHideToggle = false;
     </div>
   </div>
 </div>
-
-
 <div class="row"  style="margin-bottom: 40px; text-align: center;">
-  <!-- Bootstrap carousel -->
   <div class="col-md">
-    <h4>Conheça o Adote Petz</h4>
-    
-        Nós fazemos a conexão entre quem deseja adotar um pet com uma rede de mais de 131 ONGs e protetores parceiros.
-        Funciona assim: a Petz disponibiliza espaços especialmente dedicados para a adoção no centro de suas lojas e as ONGs/protetores parceiros ficam responsáveis pelo processo e entrevista com os potenciais adotantes. Juntos somos mais fortes!
-
+    <h4>Conheça o Help Petz</h4>
+        Nós fazemos a conexão entre quem deseja adotar um pet com uma rede ONGs e protetores parceiros.
+        Funciona assim: o site disponibiliza o espaço dedicado à adoção no centro de suas lojas e as ONGs/protetores parceiros ficam responsáveis pelo processo e entrevista com os potenciais donos. 
+        Juntos somos mais fortes!
   </div>
 </div>
-
-<h6 class="pb-1 mb-4 text-muted">Aqui você pode encontrar: <h6>
-
-<!-- Grid Card -->
-
-<div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
-  <div class="col">
-    <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/calopsita.png')}}" alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+<h6 class="pb-1 mb-4">Aqui você pode encontrar: <h6>
+<div style="text-align: center">
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <div class="col">
+      <div class="card h-100">
+        <img class="card-img-top" src="{{asset('assets/img/elements/dog.png')}}"/>
+        <div class="card-body">
+          <h5 class="card-title">Cachorrinhos</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/india.png')}}" alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="col">
+      <div class="card h-100">
+        <img class="card-img-top" src="{{asset('assets/img/elements/cat.png')}}"/>
+        <div class="card-body">
+          <h5 class="card-title">Gatinhos</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/hamster.png')}}" alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/pig.png')}}" alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/dog.png')}}" alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-      </div>
-    </div>
-  </div>
-  <div class="col">
-    <div class="card h-100">
-      <img class="card-img-top" src="{{asset('assets/img/elements/cat.png')}}" alt="Card image cap" />
-      <div class="card-body">
-        <h5 class="card-title">Card title</h5>
-        <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    <div class="col">
+      <div class="card h-100">
+        <img class="card-img-top" src="{{asset('assets/img/elements/pig.png')}}"/>
+        <div class="card-body">
+          <h5 class="card-title">Porquinhos</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<div style="text-align: center">
+  <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+    <div class="col">
+      <div class="card h-100">
+        <img class="card-img-top" src="{{asset('assets/img/elements/calopsita.png')}}"/>
+        <div class="card-body">
+          <h5 class="card-title">Calopsitas</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img class="card-img-top" src="{{asset('assets/img/elements/india.png')}}"/>
+        <div class="card-body">
+          <h5 class="card-title">Porquinhos da India</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img class="card-img-top" src="{{asset('assets/img/elements/hamster.png')}}"/>
+        <div class="card-body">
+          <h5 class="card-title">Hamsters</h5>
+          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 
-<h6 class="pb-1 mb-4 text-muted">Todos esperando por muito amor e carinho! <h6>
+<h5>E muito mais! <h5>
+<h6 class="pb-1 mb-4">Estão todos esperando por muito amor e carinho! <h6>
 <!--/ Layout Demo -->
 
 @endsection
