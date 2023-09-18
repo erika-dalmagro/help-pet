@@ -4,7 +4,7 @@ $navbarHideToggle = false;
 @endphp
 @extends('layouts/contentNavbarLayout')
 
-@section('title', 'Cards basic   - UI elements')
+@section('ONGS')
 
 @section('vendor-script')
 <script src="{{asset('assets/vendor/libs/masonry/masonry.js')}}"></script>

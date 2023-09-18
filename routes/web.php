@@ -96,4 +96,5 @@ Route::post('/autenticar', [App\Http\Controllers\auth\AuthController::class, 'au
 // Como Funciona
 Route::get('/ongs',  $controller_path . '\sobre\SobreController@ongs')->name('ongs');
 Route::get('/como-funciona',  $controller_path . '\sobre\SobreController@comoFunciona')->name('comoFunciona');
+Route::get('/quero-adotar',  $controller_path . '\adotar\AdotarController@index')->name('quero-adotar');
 //Route::get('/sobre',  $controller_path . '\sobre\SobreController@sobre')->name('sobre');
