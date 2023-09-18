@@ -30,7 +30,7 @@ $navbarHideToggle = false;
             <p class="card-text">
              Uma das organizações mais antigas de Bento Gonçalves e trabalha diariamente no resgate e cuidado dos animais abandonados. Atualmente (07/07/2023), a entidade está com 21 cachorros e 22 gatos para adoção, entre filhotes e adultos, todos vacinados e castrados.
             </p>
-            <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
+            <a href="https://www.instagram.com/ongpatasfocinhos/" class="btn btn-primary">Entre em contato</a>
           </div>
         </div>
       </div>
@@ -43,10 +43,10 @@ $navbarHideToggle = false;
           <div class="card-body">
             <h5 class="card-title">Samu Pet</h5>
             <p class="card-text">
-            Serviço de urgência e emergência para animais vítimas de maus tratos ou atropelamentos. 
-            Os animais resgatados passam por tratamento veterinário através do trabalho de duas médicas veterinárias, e os casos mais críticos são encaminhados para clínicas conveniadas do poder público municipal.
+            Serviço de urgência para animais vítimas de maus tratos ou atropelamentos. 
+            Resgatados passam por tratamento veterinário através do trabalho de duas médicas veterinárias. Os casos mais críticos são encaminhados para clínicas conveniadas do poder público municipal.
             </p>
-            <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
+            <a href="54992231853" class="btn btn-primary">Entre em contato</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -56,9 +56,6 @@ $navbarHideToggle = false;
     </div>
   </div>
 </div>
-<!--/ Horizontal -->
-
-<!-- Horizontal -->
 <div class="row mb-5">
   <div class="col-md">
     <div class="card mb-3">
@@ -73,7 +70,7 @@ $navbarHideToggle = false;
             Órgão municipal responsável pelo controle de doenças de animais, 
             e está habilitado para recolher animais que estejam doentes ou sejam um risco para os habitantes.
             </p>
-            <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
+            <a href="https://cliniguia.com/unidades/bento-goncalves-rs/unidade-de-vigilancia-em-saude-de-bento-goncalves-9460845/" class="btn btn-primary">Entre em contato</a>
           </div>
         </div>
       </div>
@@ -89,7 +86,7 @@ $navbarHideToggle = false;
             A APABG é uma entidade sem fins lucrativos formada por voluntários que atuam de forma anônima em defesa do bem-estar 
             dos animais. Há projetos da comunidade para convivência harmônica com os animais e a natureza.
             </p>
-            <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
+            <a href="https://adotar.com.br/instituicao.aspx?cod=494" class="btn btn-primary">Entre em contato</a>
           </div>
         </div>
         <div class="col-md-4">
