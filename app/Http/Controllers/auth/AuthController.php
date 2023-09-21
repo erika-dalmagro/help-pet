@@ -20,8 +20,6 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
 
-        
-
         $usuario = $_POST['email'] ?? false;
         $senha = $_POST['password'] ?? false;
      
@@ -33,8 +31,7 @@ class AuthController extends Controller
             return view('pet.index', compact('pet'));
         } else {
             $erro = true;
-            return view('auth.login', compact('erro'));
-          
+            return view('auth.login-basic');
         }
     }
 

@@ -96,5 +96,15 @@ Route::post('/autenticar', [App\Http\Controllers\auth\AuthController::class, 'au
 // Como Funciona
 Route::get('/ongs',  $controller_path . '\sobre\SobreController@ongs')->name('ongs');
 Route::get('/como-funciona',  $controller_path . '\sobre\SobreController@comoFunciona')->name('comoFunciona');
-Route::get('/quero-adotar',  $controller_path . '\adotar\AdotarController@index')->name('quero-adotar');
-//Route::get('/sobre',  $controller_path . '\sobre\SobreController@sobre')->name('sobre');
+// Quero adotar
+Route::get('/quero-adotar', [App\Http\Controllers\PetController::class, 'index'])->name('adotar.index');
+
+//Pet
+//Route::get('/', [App\Http\Controllers\PetController::class, 'index'])->name('pet.index');
+Route::get('/pet', [App\Http\Controllers\PetController::class, 'index'])->name('pet.index');
+Route::get('/pet/adicionar', [App\Http\Controllers\PetController::class, 'adicionar'])->name('pet.adicionar');
+Route::post('/pet', [App\Http\Controllers\PetController::class, 'salvar'])->name('pet.salvar');
+Route::get('/pet/{id}', [App\Http\Controllers\PetController::class, 'excluir'])->name('pet.excluir');
+Route::get('/pet/editar/{id}', [App\Http\Controllers\PetController::class, 'editar'])->name('pet.editar');
+Route::put('/pet/{id}', [App\Http\Controllers\PetController::class, 'atualizar'])->name('pet.atualizar');
+Route::get('/pet/detalhes/{id}', [App\Http\Controllers\PetController::class, 'detalhar'])->name('pet.detalhar');

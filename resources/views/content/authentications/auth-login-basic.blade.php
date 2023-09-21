@@ -20,11 +20,11 @@
               <span class="app-brand-text demo text-body fw-bolder">{{config('variables.templateName')}}</span>
             </a>
           </div>
-          <!-- /Logo -->
           <h4 class="mb-2">Bem vindos ao {{config('variables.templateName')}}! 👋</h4>
           <p class="mb-4">Digite seus dados para logar.</p>
 
           <form id="formAuthentication" class="mb-3" method="POST" action="{{ route('autenticar') }}">
+            @csrf
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
               <input type="text" class="form-control" id="email" name="email" placeholder="Digite seu Email" autofocus>

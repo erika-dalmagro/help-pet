@@ -30,6 +30,9 @@ $navbarDetached = ($navbarDetached ?? '');
           <li class="nav-item lh-1 me-3">
             <a href="/como-funciona" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">COMO FUNCIONA</a>
           </li>
+          <li class="nav-item lh-1 me-3">
+            <a href="/pet/adicionar" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">CADASTRAR</a>
+          </li>
           <!--<li class="nav-item lh-1 me-6">
               <a href="" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">CONTATO</a>
           </li>-->

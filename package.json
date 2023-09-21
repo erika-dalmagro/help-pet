@@ -20,7 +20,8 @@
     "jquery": "~3.5.1",
     "masonry-layout": "~4.2.1",
     "mix": "^0.0.1",
-    "perfect-scrollbar": "~1.5.1"
+    "perfect-scrollbar": "~1.5.1",
+    "vite": "^4.4.9"
   },
   "devDependencies": {
     "axios": "^0.25",

@@ -18,7 +18,8 @@ $navbarHideToggle = false;
 <!-- Horizontal -->
 <h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa de todos animaizinhos esperando por um lar.</h5>
 <div class="row mb-5">
-<div class="col-md">
+<div class="col-md" >
+  @if($pet->count() > 0) @foreach ($pet as $pet)
     <div class="card mb-3">
       <div class="row g-0">
         <div class="col-md-6">
@@ -36,6 +37,8 @@ $navbarHideToggle = false;
         </div>
       </div>
     </div>
+    @endif
+    @endforeach
   </div>
   <div class="col-md">
     <div class="card mb-3">
