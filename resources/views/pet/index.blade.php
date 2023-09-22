@@ -27,7 +27,7 @@ $navbarHideToggle = false;
                   <th>Nome </th>
                   <th>Descrição</th>
                   <th>Peso</th>
-                  @if(Session::get('usuario'))
+                  @if(request()->session()->get('usuario'))
                   <th>
                      <i class="fa fa-cog centralizar"></i>
                   </th>
@@ -49,6 +49,33 @@ $navbarHideToggle = false;
                   </td>
                   @endif
                </tr>
+
+
+
+
+                <div class="col-md">
+                  <div class="card mb-3">
+                     <div class="row g-0">
+                     <div class="col-md-4">
+                      <img style="width: 150px; height: 150px; position: relative; top: 20px; left: 20px;" src="{{asset('storage/'.$pet->imagem)}}"">
+                      
+                     </div>
+                     <div class="col-md-8">
+                        <div class="card-body">
+                           <h5 class="card-title">ONG Patas e Focinhos</h5>
+                           <p class="card-text">
+                           This is a wider card with supporting text below as a natural lead-in to additional content. This content
+                           is a
+                           little bit longer.
+                           </p>
+                           <a href="javascript:void(0)" class="btn btn-primary">Entre em contato</a>
+                        </div>
+                     </div>
+                     </div>
+                  </div>
+               </div>
+
+
                @endforeach
                @else
                <h3 class="ui center aligned header"> Nenhum pet cadastrado!</h3>

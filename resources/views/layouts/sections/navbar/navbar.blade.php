@@ -41,11 +41,19 @@ $navbarDetached = ($navbarDetached ?? '');
               QUERO ADOTAR
             </a>
           </li>
+          @if(request()->session()->get('usuario'))
+          <li class="nav-item lh-1 me-6">
+            <a href="/logout" type="button" class="btn rounded-pill btn-primary" style="font-size: 15px; margin: 1rem;">
+              LOGOUT
+            </a>
+          </li>
+          @else
           <li class="nav-item lh-1 me-6">
             <a href="auth/login-basic" type="button" class="btn rounded-pill btn-primary" style="font-size: 15px; margin: 1rem;">
               LOGIN
             </a>
           </li>
+          @endif
         </ul>
       </div>
   </nav>

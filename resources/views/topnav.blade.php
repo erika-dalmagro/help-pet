@@ -5,7 +5,7 @@
                 <div class="container-fluid">
                     <div class="collapse navbar-collapse" id="navigation">
                         <ul class="navbar-nav mx-auto">
-                            @if(Session::get('usuario'))
+                            @if(request()->session()->get('usuario'))
                             <li class="nav-item">
                                 <a class="nav-link d-flex align-items-center me-2 active" aria-current="page" href="{{ route('pet.index') }}">
                                     <i class="fa fa-list opacity-6 text-dark me-1"></i>
@@ -31,10 +31,13 @@
                                     Listagem de Pets
                                 </a>
                             </li>
+                            @endif
+
+                            @if(request()->session()->get('usuario'))
                             <li class="nav-item">
                                 <a class="nav-link me-2 active" href="{{ route('auth.login') }}">
                                     <i class="fas fa-user-circle opacity-6 text-dark me-1"></i>
-                                    Login
+                                    Logout
                                 </a>
                             </li>
                             @endif
