@@ -30,17 +30,18 @@ $navbarDetached = ($navbarDetached ?? '');
           <li class="nav-item lh-1 me-3">
             <a href="/como-funciona" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">COMO FUNCIONA</a>
           </li>
+
+          @if(request()->session()->get('usuario'))
           <li class="nav-item lh-1 me-3">
             <a href="/pet/adicionar" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">CADASTRAR</a>
           </li>
-          <!--<li class="nav-item lh-1 me-6">
-              <a href="" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">CONTATO</a>
-          </li>-->
+          @endif
           <li class="nav-item lh-1 me-6">
-            <a href="/quero-adotar"  style="font-size: 15px; margin: 1rem;" type="button" class="btn rounded-pill btn-outline-primary">
+            <a href="/quero-adotar" style="font-size: 15px; margin: 1rem;" type="button" class="btn rounded-pill btn-outline-primary">
               QUERO ADOTAR
             </a>
           </li>
+
           @if(request()->session()->get('usuario'))
           <li class="nav-item lh-1 me-6">
             <a href="/logout" type="button" class="btn rounded-pill btn-primary" style="font-size: 15px; margin: 1rem;">

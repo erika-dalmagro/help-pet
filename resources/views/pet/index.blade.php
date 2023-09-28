@@ -20,7 +20,7 @@ $navbarHideToggle = false;
          @foreach ($pet as $pet)
          <!-- <div class="row -0"> -->
          <div class="card" >
-               <img style="width: 150px; height: 150px; position: relative; top: 20px; left: 20px;" src="{{asset('storage/'.$pet->imagem)}}"">
+               <img class="align-photo" src="{{asset('storage/'.$pet->imagem)}}"">
                <div class="card-body">
                   <h5 class="card-title">{{ $pet->nome }}, {{ $pet->genero }} </h5>
                   <p class="card-text">
@@ -55,5 +55,14 @@ $navbarHideToggle = false;
 
    .center {
       text-align: center;
+   }
+
+   .align-photo {
+      align-self: center;
+      width: 150px;
+      height: 150px;
+      position: relative;
+      top: 20px;
+      margin-bottom: 10px;
    }
 </style>
