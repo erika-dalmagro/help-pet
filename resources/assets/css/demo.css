@@ -106,3 +106,8 @@
   text-align: center;
   margin-top: 1rem;
 }
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}

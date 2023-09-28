@@ -27,29 +27,35 @@ $navbarHideToggle = false;
 
                 <div class="form-group">
                     <label for="cor">Cor</label>
-                    <input type="text" name="cor" class="form-control @error('cor') is-invalid @enderror" id="cor" placeholder="Digite a Cor" value="{{ old('cor') }}" required>
+                    <input type="text" name="cor" class="form-control @error('cor') is-invalid @enderror" id="Cor" placeholder="Digite a Cor" value="{{ old('cor') }}" required>
                 </div>
                 @error('cor')
                 <div class="alert alert-danger">Erro ao cadastrar Cor</div>
                 @enderror
 
                 <div class="form-group">
-                    <label for="idade">idade</label>
-                    <input type="text" name="idade" class="form-control @error('idade') is-invalid @enderror" id="idade" placeholder="Digite a idade" value="{{ old('idade') }}" required>
+                    <label for="idade">Idade</label>
+                    <input type="number" name="idade" class="form-control @error('idade') is-invalid @enderror" id="Idade" placeholder="Digite a Idade" value="{{ old('idade') }}" required>
                 </div>
                 @error('idade')
                 <div class="alert alert-danger">Erro ao cadastrar idade</div>
                 @enderror
 
                 <div class="form-group">
-                    <label for="peso">peso</label>
-                    <input type="text" name="peso" class="form-control @error('peso') is-invalid @enderror" id="peso" placeholder="Digite a peso" value="{{ old('peso') }}" required>
+                    <label for="idade">Gênero</label>
+                    <input type="text" name="genero" class="form-control @error('genero') is-invalid @enderror" id="genero" placeholder="Digite o Gênero" value="{{ old('genero') }}" required>
+                </div>
+                @error('idade')
+                <div class="alert alert-danger">Erro ao cadastrar idade</div>
+                @enderror
+
+                <div class="form-group">
+                    <label for="peso">Peso</label>
+                    <input type="number" name="peso" class="form-control @error('peso') is-invalid @enderror" id="peso" placeholder="Digite o Peso" value="{{ old('peso') }}" required>
                 </div>
                 @error('peso')
                 <div class="alert alert-danger">Erro ao cadastrar peso</div>
                 @enderror
-
-
                 
                 <div class="form-group">
                     <label for="email">Descrição</label>
@@ -58,7 +64,6 @@ $navbarHideToggle = false;
                 @error('descricao')
                 <div class="alert alert-danger">Erro ao cadastrar Descrição</div>
                 @enderror
-
 
                 <div class="form-group">
                     <label for="imagem">Imagem</label>
@@ -71,7 +76,7 @@ $navbarHideToggle = false;
 
 
 
-                <button type="submit" class="btn center aligned btn-outline-primary ui button">Enviar</button>
+                <button style="margin-top:10px;" type="submit" class="btn center aligned btn-outline-primary ui button">Enviar</button>
             </form>
         </div>
     </div>
