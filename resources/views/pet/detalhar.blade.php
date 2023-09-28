@@ -1,6 +1,18 @@
+@php
+$isMenu = false;
+$navbarHideToggle = false;
+@endphp
+@extends('layouts/contentNavbarLayout')
 
+@section('title', 'Como Funciona')
+
+@section('vendor-script')
+<script src="{{asset('assets/vendor/libs/masonry/masonry.js')}}"></script>
+@endsection
+
+@section('content')
 <div class="space">
-    <h1 class="ui center aligned header"> Detalhes </h1>
+    <h2 class="ui center aligned header"> Detalhes </h2>
     <div class="ui container">
         <table class="table ui celled center aligned">
             <thead>
@@ -31,3 +43,9 @@
         </table>
     </div>
 </div>
+@endsection
+<style>
+   .center {
+      text-align: center;
+   }
+</style>

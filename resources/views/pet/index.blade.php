@@ -37,17 +37,23 @@ $navbarHideToggle = false;
       @else
       <h3 class="ui center aligned header"> Nenhum pet cadastrado!</h3>
       @endif
+
+      @if(Session::get('usuario'))
+      <div class="centro">
+         <a class="btn btn-outline-primary ui button" href="{{ route('pet.adicionar') }}"> Cadastrar Pet</a>
+      </div>
+      @endif
       <br>
 </div>
 @endsection
 <style>
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
-}
+   .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 30px;
+   }
 
-.center {
-   text-align: center;
-}
+   .center {
+      text-align: center;
+   }
 </style>

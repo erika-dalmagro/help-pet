@@ -32,12 +32,13 @@ class PetController extends Controller
             'nome' => 'required',
             'descricao' => 'required',
             'idade' => 'required',
+            'genero' => 'required',
             'cor' => 'required',
             'peso' => 'required',
             'imagem' => 'required',
             'imagem.*' => 'mimes:doc,pdf,docx,zip,png,jpge,jpg'
         ]);
-        
+       // dd($request->all());
         if ($request->hasfile('imagem')) {
             $file = $request->file('imagem');
             $name = time() . '.' . $file->extension();
@@ -63,6 +64,7 @@ class PetController extends Controller
         $request->validate([
             'nome' => 'required',
             'descricao' => 'required',
+            'genero' => 'required',
             'cor' => 'required',
             'idade' => 'required',
             'peso' => 'required',
