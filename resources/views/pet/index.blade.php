@@ -11,10 +11,11 @@ $navbarHideToggle = false;
 @endsection
 
 @section('content')
-<h4 class="fw-bold py-3 mb-4">Disponíveis para Adoção</h4>
-
-<h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa de todos animaizinhos esperando por um lar.</h5>
-<div class="space grid-container">
+<div class="center">
+   <h4 class="fw-bold py-3 mb-4">Disponíveis para Adoção</h4>
+   <h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa de todos animaizinhos esperando por um lar.</h5>
+</div>
+<div class="space grid-container center">
       @if($pet->count() > 0)
          @foreach ($pet as $pet)
          <!-- <div class="row -0"> -->
@@ -39,3 +40,14 @@ $navbarHideToggle = false;
       <br>
 </div>
 @endsection
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.center {
+   text-align: center;
+}
+</style>
