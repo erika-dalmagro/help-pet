@@ -22,14 +22,15 @@ $navbarHideToggle = false;
          <div class="card" >
                <img class="align-photo" src="{{asset('storage/'.$pet->imagem)}}">
                <div class="card-body">
-                  <h5 class="card-title">{{ $pet->nome }}, {{ $pet->genero }} </h5>
+                  <h5 class="card-title"><b>{{ $pet->nome }}</b>, {{ $pet->genero }} </h5>
                   <p class="card-text">
                   <!-- This is a wider card with supporting text below as a natural lead-in to additional content. This content
                   is a
                   little bit longer. -->
                   </p>
                   <div class="centro">
-                     <a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Quero adotar!</a>
+                   <!--<a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Quero adotar!</a>-->
+                  <a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Mais informações</a>
                         @if(Session::get('usuario'))
                      
                            <a class="btn btn-outline-primary ui button" href="/pet/editar/{{$pet->id}}"> Editar Pet</a>

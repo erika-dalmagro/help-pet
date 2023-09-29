@@ -1,6 +1,17 @@
-@extends('layout')
-@extends('topnav')
+@php
+$isMenu = false;
+$navbarHideToggle = false;
+@endphp
+@extends('layouts/contentNavbarLayout')
+
+@section('title', 'Como Funciona')
+
+@section('vendor-script')
+<script src="{{asset('assets/vendor/libs/masonry/masonry.js')}}"></script>
+@endsection
+
 @section('content')
+
 @if(Session::get('usuario'))
 <div class="space">
 <div class="ui container huge">
@@ -19,19 +30,43 @@
             @enderror
 
             <div class="form-group">
-                <label for="descricao">Descrição</label>
-                <input type="text" name="descricao" class="form-control" id="descricao" placeholder="Digite a descrição" value="{{ old('descricao', $pet->descricao) }}" required>
+                <label for="cor">Cor</label>
+                <input type="text" name="cor" class="form-control" id="cor" placeholder="Digite a cor" value="{{ old('cor', $pet->cor) }}" required>
             </div>
-            @error('descricao')
-            <div class="alert alert-danger">Erro ao atualizar a descrição</div>
+            @error('cor')
+            <div class="alert alert-danger">Erro ao atualizar a cor</div>
             @enderror
 
             <div class="form-group">
-                <label for="preco">Preço</label>
-                <input type="number" name="preco" class="form-control" id="preco" placeholder="Digite o Preço" value="{{ old('preco', $pet->preco) }}" required>
+                <label for="idade">Idade</label>
+                <input type="number" name="idade" class="form-control" id="idade" placeholder="Digite a Idade" value="{{ old('idade', $pet->idade) }}" required>
             </div>
-            @error('preco')
-            <div class="alert alert-danger">Erro ao atualizar o Preço</div>
+            @error('idade')
+            <div class="alert alert-danger">Erro ao atualizar a Idade</div>
+            @enderror
+
+            <div class="form-group">
+                <label for="genero">Gênero</label>
+                <input type="text" name="genero" class="form-control" id="genero" placeholder="Digite o Gênero" value="{{ old('genero', $pet->genero) }}" required>
+            </div>
+            @error('genero')
+            <div class="alert alert-danger">Erro ao atualizar o Gênero</div>
+            @enderror
+
+            <div class="form-group">
+                <label for="peso">Peso</label>
+                <input type="number" name="peso" class="form-control" id="peso" placeholder="Digite o Peso" value="{{ old('peso', $pet->peso) }}" required>
+            </div>
+            @error('peso')
+            <div class="alert alert-danger">Erro ao atualizar o Peso</div>
+            @enderror
+
+            <div class="form-group">
+                <label for="descricao">Descrição</label>
+                <input type="text" name="descricao" class="form-control" id="descricao" placeholder="Digite a Descrição" value="{{ old('descricao', $pet->descricao) }}" required>
+            </div>
+            @error('descricao')
+            <div class="alert alert-danger">Erro ao atualizar a Descrição</div>
             @enderror
 
             <div class="form-group">
