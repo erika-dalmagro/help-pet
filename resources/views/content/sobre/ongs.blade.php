@@ -11,12 +11,10 @@ $navbarHideToggle = false;
 @endsection
 
 @section('content')
-<h4 class="fw-bold py-3 mb-4"><span class="text-muted fw-light">ONGS/</span> Parceiras</h4>
-
-
-
-<!-- Horizontal -->
-<h5 class="pb-1 mb-4">Aqui você pode ter uma visão das ONG apoiadoras do projeto.</h5>
+<div class="center">
+  <h4 class="fw-bold py-3 mb-4">ONGs Parceiras</h4>
+  <h5 class="pb-1 mb-4">Aqui você pode ter uma visão das ONG apoiadoras do projeto.</h5>
+</div>
 <div class="row mb-5">
   <div class="col-md">
     <div class="card mb-3">
@@ -99,3 +97,8 @@ $navbarHideToggle = false;
 <!--/ Horizontal -->
 
 @endsection
+<style>
+  .center {
+      text-align: center;
+  }
+</style>

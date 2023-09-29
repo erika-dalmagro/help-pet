@@ -42,7 +42,7 @@ $navbarHideToggle = false;
 </div>
 <div class="row"  style="margin-bottom: 40px; text-align: center;">
   <div class="col-md">
-    <h4>Conheça o Help Petz</h4>
+    <h4>Conheça o Help Pet</h4>
         Nós fazemos a conexão entre quem deseja adotar um pet com uma rede ONGs e protetores parceiros.
         Funciona assim: o site disponibiliza o espaço dedicado à adoção no centro de suas lojas e as ONGs/protetores parceiros ficam responsáveis pelo processo e entrevista com os potenciais donos. 
         Juntos somos mais fortes!

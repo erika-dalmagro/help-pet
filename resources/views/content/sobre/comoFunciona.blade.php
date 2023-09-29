@@ -11,6 +11,10 @@ $navbarHideToggle = false;
 @endsection
 
 @section('content')
+<div class="center">
+   <h4 class="fw-bold py-3 mb-4">Como funciona a Adoção Responsável?</h4>
+   <h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa das etapas de adoção de seu novo animalzinho.</h5>
+</div>
 <div class="space grid-container center">
   <div class="card" >
     <img class="align-photo" src="{{asset('assets/img/elements/passo1.png')}}">
