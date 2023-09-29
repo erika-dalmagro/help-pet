@@ -28,8 +28,14 @@ $navbarHideToggle = false;
                   is a
                   little bit longer. -->
                   </p>
-                  <a href="javascript:void(0)" class="btn btn-primary">Quero adotar!</a>
-           
+                  <div class="centro">
+                     <a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Quero adotar!</a>
+                        @if(Session::get('usuario'))
+                     
+                           <a class="btn btn-outline-primary ui button" href="/pet/editar/{{$pet->id}}"> Editar Pet</a>
+                     
+                        @endif
+                  </div>
                </div>
             <!-- </div> -->
          </div>
@@ -38,11 +44,7 @@ $navbarHideToggle = false;
       <h3 class="ui center aligned header"> Nenhum pet cadastrado!</h3>
       @endif
 
-      @if(Session::get('usuario'))
-      <div class="centro">
-         <a class="btn btn-outline-primary ui button" href="{{ route('pet.adicionar') }}"> Cadastrar Pet</a>
-      </div>
-      @endif
+     
       <br>
 </div>
 @endsection
