@@ -24,7 +24,7 @@ $navbarHideToggle = false;
         Visite, entre em contato com ONGs/protetores ou veja nossa lista de animais disponíveis. Lá você irá conhecer todos pets disponíveis e criar uma conexão perfeita com seu novo bichinho em busca de um novo lar. Confira a lista de ONGs aqui:
       </p>
       <div class="centro">
-          <a href="/pet/detalhes/" class="btn btn-primary">ONGs</a>
+          <a href="/ongs/" class="btn btn-primary">ONGs</a>
       </div>
     </div>
   </div>

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 use App\Models\Pet;
 use Illuminate\Http\Request;
-
+use Illuminate\Support\Facades\File; 
 class PetController extends Controller
 {
     public $pet;
@@ -80,7 +80,7 @@ class PetController extends Controller
             $file->move(public_path() . '/storage/', $name);
             $data = $name;
             $image_path = public_path() . '/storage/' . $pet->imagem;
-            unlink($image_path);
+            File::delete($image_path);
         }
         $pet->update($request->all());
 

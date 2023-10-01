@@ -8,6 +8,7 @@ $navbarHideToggle = false;
 
 @section('vendor-script')
 <script src="{{asset('assets/vendor/libs/masonry/masonry.js')}}"></script>
+<script src="https://kit.fontawesome.com/ff9f0a9de4.js" crossorigin="anonymous"></script>
 @endsection
 
 @section('content')
@@ -18,34 +19,30 @@ $navbarHideToggle = false;
 <div class="space grid-container center">
       @if($pet->count() > 0)
          @foreach ($pet as $pet)
-         <!-- <div class="row -0"> -->
          <div class="card" >
-               <img class="align-photo" src="{{asset('storage/'.$pet->imagem)}}">
-               <div class="card-body">
-                  <h5 class="card-title"><b>{{ $pet->nome }}</b>, {{ $pet->genero }} </h5>
-                  <p class="card-text">
-                  <!-- This is a wider card with supporting text below as a natural lead-in to additional content. This content
-                  is a
-                  little bit longer. -->
-                  </p>
-                  <div class="centro">
-                   <!--<a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Quero adotar!</a>-->
+            <img class="align-photo" src="{{asset('storage/'.$pet->imagem)}}">
+            <div class="card-body">
+               <h5 class="card-title"><b>{{ $pet->nome }}</b>, {{ $pet->genero }} </h5>
+               <div class="centro" style="display: inline-block;">
+                  <!--<a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Quero adotar!</a>-->
                   <a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Mais informações</a>
-                        @if(Session::get('usuario'))
-                     
-                           <a class="btn btn-outline-primary ui button" href="/pet/editar/{{$pet->id}}"> Editar Pet</a>
-                     
-                        @endif
-                  </div>
                </div>
-            <!-- </div> -->
+               <div class="centro" style="display: inline-block; margin-top: 10px;">
+                  @if(Session::get('usuario'))
+                     <a class="btn btn-outline-primary ui button" href="/pet/editar/{{$pet->id}}">
+                        <i class="fa-regular fa-pen-to-square"></i>
+                     </a>
+                     <a class="btn btn-outline-primary ui button" href="/pet/editar/{{$pet->id}}">
+                        <i class="fa-solid fa-trash"></i>
+                     </a>                     
+                     @endif
+               </div>
+            </div>
          </div>
          @endforeach
       @else
       <h3 class="ui center aligned header"> Nenhum pet cadastrado!</h3>
       @endif
-
-     
       <br>
 </div>
 @endsection

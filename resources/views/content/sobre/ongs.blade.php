@@ -44,7 +44,7 @@ $navbarHideToggle = false;
             Serviço de urgência para animais vítimas de maus tratos ou atropelamentos. 
             Resgatados passam por tratamento veterinário através do trabalho de duas médicas veterinárias. Os casos mais críticos são encaminhados para clínicas conveniadas do poder público municipal.
             </p>
-            <a href="54992231853" class="btn btn-primary">Entre em contato</a>
+            <a href="https://wa.me/54992231853" class="btn btn-primary">Entre em contato</a>
           </div>
         </div>
         <div class="col-md-4">
@@ -66,7 +66,7 @@ $navbarHideToggle = false;
             <h5 class="card-title">Centro de Controle de Zoonoses (CCZ) de Bento Gonçalves</h5>
             <p class="card-text">
             Órgão municipal responsável pelo controle de doenças de animais, 
-            e está habilitado para recolher animais que estejam doentes ou sejam um risco para os habitantes.
+            e está habilitado para recolher animais que estejam doentes ou sejam um risco para os habitantes. Telefone: (54) 99274-4262 
             </p>
             <a href="https://cliniguia.com/unidades/bento-goncalves-rs/unidade-de-vigilancia-em-saude-de-bento-goncalves-9460845/" class="btn btn-primary">Entre em contato</a>
           </div>
@@ -94,7 +94,6 @@ $navbarHideToggle = false;
     </div>
   </div>
 </div>
-<!--/ Horizontal -->
 
 @endsection
 <style>
