@@ -16,8 +16,6 @@ class PetController extends Controller
     public function index()
     {
         $pet = Pet::all();
-
-       
         return  view('pet.index', compact('pet'));
     }
 
@@ -31,14 +29,17 @@ class PetController extends Controller
         $this->validate($request, [
             'nome' => 'required',
             'descricao' => 'required',
+            'castrado' => 'required',
+            'vacinado' => 'required',
             'idade' => 'required',
             'genero' => 'required',
             'cor' => 'required',
+            'tamanho' => 'required',
             'peso' => 'required',
             'imagem' => 'required',
             'imagem.*' => 'mimes:doc,pdf,docx,zip,png,jpge,jpg'
         ]);
-       // dd($request->all());
+       
         if ($request->hasfile('imagem')) {
             $file = $request->file('imagem');
             $name = time() . '.' . $file->extension();
@@ -64,9 +65,12 @@ class PetController extends Controller
         $request->validate([
             'nome' => 'required',
             'descricao' => 'required',
+            'castrado' => 'required',
+            'vacinado' => 'required',
             'genero' => 'required',
             'cor' => 'required',
             'idade' => 'required',
+            'tamanho' => 'required',
             'peso' => 'required',
             'imagem' => 'required',
             'imagem.*' => 'mimes:doc,pdf,docx,zip,png,jpge,jpg'
@@ -76,6 +80,7 @@ class PetController extends Controller
        
         if ($request->hasfile('imagem')) {
             $file = $request->file('imagem');
+           
             $name = time() . '.' . $file->extension();
             $file->move(public_path() . '/storage/', $name);
             $data = $name;
@@ -102,7 +107,7 @@ class PetController extends Controller
     {
         $pet = Pet::find($id);
         $image_path = public_path() . '/storage/' . $pet->imagem;
-        unlink($image_path);
+        File::delete($image_path);
         Pet::destroy($id);
         return redirect()->route('pet.index');
     }

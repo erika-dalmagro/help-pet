@@ -12,6 +12,7 @@ class Pet extends Model
     'genero',
     'peso',
     'idade',
+    'tamanho',
     'descricao',
   ];
 }

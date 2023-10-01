@@ -53,7 +53,7 @@
         }
 
         .centro {
-            text-align: center;
+            text-align: center !important;
         }
 
         .btn.btn-outline-primary.ui.button {

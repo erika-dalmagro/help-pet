@@ -42,6 +42,14 @@ $navbarHideToggle = false;
                 @enderror
 
                 <div class="form-group">
+                    <label for="tamanho">Tamanho</label>
+                    <input type="number" name="tamanho" class="form-control @error('tamanho') is-invalid @enderror" id="tamanho" placeholder="Selecione o Tamanho" value="{{ old('tamanho') }}" required>
+                </div>
+                @error('tamanho')
+                <div class="alert alert-danger">Erro ao atualizar o tamanho</div>
+                @enderror
+
+                <div class="form-group">
                     <label for="idade">Gênero</label>
                     <input type="text" name="genero" class="form-control @error('genero') is-invalid @enderror" id="genero" placeholder="Digite o Gênero" value="{{ old('genero') }}" required>
                 </div>

@@ -15,7 +15,7 @@
   <link rel="canonical" href="{{ config('variables.productPage') ? config('variables.productPage') : '' }}">
   <!-- Favicon -->
   <link rel="icon" type="image/x-icon" color='#696cff' href="{{ asset('assets/img/favicon/favicon.ico') }}" />
-
+  <script src="https://kit.fontawesome.com/ff9f0a9de4.js" crossorigin="anonymous"></script>
   <!-- Include Styles -->
   @include('layouts/sections/styles')
 

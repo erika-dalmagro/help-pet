@@ -8,7 +8,6 @@ $navbarHideToggle = false;
 
 @section('vendor-script')
 <script src="{{asset('assets/vendor/libs/masonry/masonry.js')}}"></script>
-<script src="https://kit.fontawesome.com/ff9f0a9de4.js" crossorigin="anonymous"></script>
 @endsection
 
 @section('content')
@@ -32,7 +31,7 @@ $navbarHideToggle = false;
                      <a class="btn btn-outline-primary ui button" href="/pet/editar/{{$pet->id}}">
                         <i class="fa-regular fa-pen-to-square"></i>
                      </a>
-                     <a class="btn btn-outline-primary ui button" href="/pet/editar/{{$pet->id}}">
+                     <a class="btn btn-outline-primary ui button" href="/pet/excluir/{{$pet->id}}">
                         <i class="fa-solid fa-trash"></i>
                      </a>                     
                      @endif

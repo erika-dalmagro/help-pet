@@ -15,7 +15,7 @@ $navbarHideToggle = false;
 @if(Session::get('usuario'))
 <div class="space">
 <div class="ui container huge">
-    <h1 class="ui center aligned header"> Edição de Pet </h1>
+    <h1 class="ui center aligned header centro"> Edição de Pet </h1>
 
     <div class="ul list-group">
         <form action="{{ route('pet.atualizar', $pet->id) }}" enctype="multipart/form-data" method="post" class="needs-validation" novalidate>
@@ -43,6 +43,14 @@ $navbarHideToggle = false;
             </div>
             @error('idade')
             <div class="alert alert-danger">Erro ao atualizar a Idade</div>
+            @enderror
+
+            <div class="form-group">
+                <label for="tamanho">Tamanho</label>
+                <input type="text" name="tamanho" class="form-control" id="tamanho" placeholder="Selecione o Tamanho" value="{{ old('tamanho', $pet->tamanho) }}" required>
+            </div>
+            @error('tamanho')
+            <div class="alert alert-danger">Erro ao atualizar o tamanho</div>
             @enderror
 
             <div class="form-group">
@@ -76,16 +84,30 @@ $navbarHideToggle = false;
             @error('imagem')
             <div class="alert alert-danger">Erro ao atualizar a imagem</div>
             @enderror
-            <button type="submit" class="btn center aligned btn-outline-primary ui button">Enviar</button>
-        </form>
+            <div class="form-group centro margin-form">
+                <button type="submit" class="btn center aligned btn-primary ui button">Enviar</button>
+            </div>
+</form>
 
     </div>
 </div>
 @else
 <div class="space">
     <div class="ui container huge">
-        <h1 class="ui center aligned header"> Você precisa ser um usuário admin par acessar essa página.</h1>
+        <h1 class="ui center aligned header"> Você precisa ser um usuário administrador par acessar essa página.</h1>
     </div>
 </div>
 @endif
 @endsection
+
+<style>
+    .centro {
+      text-align: center;
+    }
+    div .form-group{
+        margin: 10px;
+    }
+    .form-group label{
+        margin-bottom: 6px;
+    }
+</style>
