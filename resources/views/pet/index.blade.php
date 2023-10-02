@@ -28,10 +28,10 @@ $navbarHideToggle = false;
                </div>
                <div class="centro" style="display: inline-block; margin-top: 10px;">
                   @if(Session::get('usuario'))
-                     <a class="btn btn-outline-primary ui button" href="/pet/editar/{{$pet->id}}">
+                     <a class="btn btn-outline-primary ui button" href="{{ route('pet.editar', $pet->id) }}">
                         <i class="fa-regular fa-pen-to-square"></i>
                      </a>
-                     <a class="btn btn-outline-primary ui button" href="/pet/excluir/{{$pet->id}}">
+                     <a class="btn btn-outline-primary ui button" href="{{ route('pet.excluir', $pet->id) }}">
                         <i class="fa-solid fa-trash"></i>
                      </a>                     
                      @endif

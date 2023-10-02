@@ -13,7 +13,7 @@ $navbarHideToggle = false;
 @section('content')
 <div class="space">
     <h2 class="ui center aligned header"> Detalhes </h2>
-    <img  class="center d-block rounded" style="width: 200px;" src="{{asset('storage/'.$pet->imagem)}}">
+    <img  class="center d-block rounded" style="width: 250px;" src="{{asset('storage/'.$pet->imagem)}}">
     <div class="row"  style="margin-bottom: 40px; text-align: center;">
         <div class="col-md">
             <h4>{{ $pet -> nome }}, {{ $pet -> tamanho }}</h4>
@@ -56,9 +56,11 @@ $navbarHideToggle = false;
                         </a>
                     </td>
                 </tr>
-
             </tbody>
         </table>
+        <div class="center margin-form">
+            <button class="btn btn-primary btn-lg" type="button">Tenho interessse!</button>
+        </div>
     </div>
 </div>
 @endsection

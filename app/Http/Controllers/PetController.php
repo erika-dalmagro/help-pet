@@ -105,8 +105,6 @@ class PetController extends Controller
 
     public function excluir($id)
     {
-
-        dd($id);
         $pet = Pet::find($id);
         $image_path = public_path() . '/storage/' . $pet->imagem;
         File::delete($image_path);
