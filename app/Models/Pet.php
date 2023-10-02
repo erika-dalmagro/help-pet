@@ -14,5 +14,7 @@ class Pet extends Model
     'idade',
     'tamanho',
     'descricao',
+    'castrado',
+    'vacinado',
   ];
 }

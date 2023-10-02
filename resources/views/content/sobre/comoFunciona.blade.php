@@ -19,7 +19,7 @@ $navbarHideToggle = false;
   <div class="card" >
     <img class="align-photo" src="{{asset('assets/img/elements/passo1.png')}}">
     <div class="card-body">
-      <h5 class="card-title">1°: Ache seu pet</h5>
+      <h5 class="card-title">1°: Encontre seu pet</h5>
       <p class="card-text">
         Visite, entre em contato com ONGs/protetores ou veja nossa lista de animais disponíveis. Lá você irá conhecer todos pets disponíveis e criar uma conexão perfeita com seu novo bichinho em busca de um novo lar. Confira a lista de ONGs aqui:
       </p>

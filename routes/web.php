@@ -104,7 +104,9 @@ Route::get('/quero-adotar', [App\Http\Controllers\PetController::class, 'index']
 Route::get('/pet', [App\Http\Controllers\PetController::class, 'index'])->name('pet.index');
 Route::get('/pet/adicionar', [App\Http\Controllers\PetController::class, 'adicionar'])->name('pet.adicionar');
 Route::post('/pet', [App\Http\Controllers\PetController::class, 'salvar'])->name('pet.salvar');
-Route::get('/pet/{id}', [App\Http\Controllers\PetController::class, 'excluir'])->name('pet.excluir');
+
+Route::get('/pet/excluir/{id}', [App\Http\Controllers\PetController::class, 'excluir'])->name('pet.excluir');
+
 Route::get('/pet/editar/{id}', [App\Http\Controllers\PetController::class, 'editar'])->name('pet.editar');
 Route::put('/pet/{id}', [App\Http\Controllers\PetController::class, 'atualizar'])->name('pet.atualizar');
 Route::get('/pet/detalhes/{id}', [App\Http\Controllers\PetController::class, 'detalhar'])->name('pet.detalhar');
