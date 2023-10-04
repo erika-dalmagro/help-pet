@@ -16,7 +16,7 @@ class AdotarController extends Controller
     public function index()
     {
         $pet = Pet::all();
-        return  view('content.adotar.adotar', compact('pet'));
+        return  view('adotar.adotar', compact('pet'));
        
     }
 

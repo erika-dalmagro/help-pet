@@ -9,15 +9,8 @@ $navbarHideToggle = false;
 
 @section('content')
 
-<!-- Layout Demo -->
 <div class="layout-demo-wrapper">
- 
-
-  <!-- Bootstrap carousel -->
-
-  
 <div class="row">
-  <!-- Bootstrap carousel -->
   <div class="col">
     <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="margin-bottom: 40px;">
       <ol class="carousel-indicators">
@@ -27,25 +20,13 @@ $navbarHideToggle = false;
       </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img class="d-block w-100" src="{{asset('assets/img/elements/banner-2.png')}}" alt="First slide" />
-          <div class="carousel-caption d-none d-md-block">
-            <h3>First slide</h3>
-            <p>Eos mutat malis maluisset et, agam ancillae quo te, in vim congue pertinacia.</p>
-          </div>
+          <img class="d-block w-100" src="{{asset('assets/img/elements/banner-4.png')}}" alt="First slide" />
         </div>
         <div class="carousel-item">
-          <img class="d-block w-100" src="{{asset('assets/img/elements/banner-2.png')}}" alt="Second slide" />
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Second slide</h3>
-            <p>In numquam omittam sea.</p>
-          </div>
+          <img class="d-block w-100" src="{{asset('assets/img/elements/banner-3.png')}}" alt="Second slide" />
         </div>
         <div class="carousel-item">
           <img class="d-block w-100" src="{{asset('assets/img/elements/banner-2.png')}}" alt="Third slide" />
-          <div class="carousel-caption d-none d-md-block">
-            <h3>Third slide</h3>
-            <p>Lorem ipsum dolor sit amet, virtute consequat ea qui, minim graeco mel no.</p>
-          </div>
         </div>
       </div>
       <a class="carousel-control-prev" href="#carouselExample" role="button" data-bs-slide="prev">
@@ -75,7 +56,7 @@ $navbarHideToggle = false;
         <img class="card-img-top" src="{{asset('assets/img/elements/dog.png')}}"/>
         <div class="card-body">
           <h5 class="card-title">Cachorrinhos</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text" style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -84,7 +65,7 @@ $navbarHideToggle = false;
         <img class="card-img-top" src="{{asset('assets/img/elements/cat.png')}}"/>
         <div class="card-body">
           <h5 class="card-title">Gatinhos</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text" style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -93,7 +74,7 @@ $navbarHideToggle = false;
         <img class="card-img-top" src="{{asset('assets/img/elements/pig.png')}}"/>
         <div class="card-body">
           <h5 class="card-title">Porquinhos</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text" style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -106,7 +87,7 @@ $navbarHideToggle = false;
         <img class="card-img-top" src="{{asset('assets/img/elements/calopsita.png')}}"/>
         <div class="card-body">
           <h5 class="card-title">Calopsitas</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text" style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -115,7 +96,7 @@ $navbarHideToggle = false;
         <img class="card-img-top" src="{{asset('assets/img/elements/india.png')}}"/>
         <div class="card-body">
           <h5 class="card-title">Porquinhos da India</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text" style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
@@ -124,18 +105,14 @@ $navbarHideToggle = false;
         <img class="card-img-top" src="{{asset('assets/img/elements/hamster.png')}}"/>
         <div class="card-body">
           <h5 class="card-title">Hamsters</h5>
-          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <p class="card-text" style="font-weight: lighter;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-
-<h5>E muito mais! <h5>
+<h5>Adote! <h5>
 <h6 class="pb-1 mb-4">Estão todos esperando por muito amor e carinho! <h6>
-<!--/ Layout Demo -->
-
-
 
 @endsection

@@ -50,7 +50,7 @@ $navbarDetached = ($navbarDetached ?? '');
           </li>
           @else
           <li class="nav-item lh-1 me-6">
-            <a href="auth/login-basic" type="button" class="btn rounded-pill btn-primary" style="font-size: 15px; margin: 1rem;">
+            <a href="auth/login" type="button" class="btn rounded-pill btn-primary" style="font-size: 15px; margin: 1rem;">
               LOGIN
             </a>
           </li>

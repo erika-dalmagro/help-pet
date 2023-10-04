@@ -70,9 +70,9 @@
       "slug": "auth",
       "submenu": [
         {
-          "url": "/auth/login-basic",
+          "url": "/auth/",
           "name": "Login",
-          "slug": "auth-login-basic",
+          "slug": "auth",
           "target": "_blank"
         },
         {

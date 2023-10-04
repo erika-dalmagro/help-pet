@@ -10,7 +10,7 @@ class AuthController extends Controller
 {
     public function index()
     {
-        return view('auth.login-basic');
+        return view('auth.login');
     }
 
     public function autenticar(Request $request)
@@ -22,20 +22,17 @@ class AuthController extends Controller
 
         $usuario = $_POST['email'] ?? false;
         $senha = $_POST['password'] ?? false;
-        //dd($request->password);
         $usuario = User::where('email', '=', $request->email)->first();
       
         if ($usuario && $request->password == $usuario->senha) {
             $request->session()->start();
             session(['usuario' => $usuario]);
-            //dd( $request->session()->get('usuario'));
             $pet = Pet::all();
 
-           // dd( $pet );
             return view('pet.index', compact('pet'));
         } else {
             $erro = true;
-            return view('auth.login-basic');
+            return view('auth.login');
         }
     }
 

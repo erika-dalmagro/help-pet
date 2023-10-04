@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Controllers\sobre ;
+namespace App\Http\Controllers ;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
@@ -9,15 +9,15 @@ class SobreController extends Controller
 {
   public function index()
   {
-    return view('content.sobre.sobre');
+    return view('sobre.sobre');
   }
   public function ongs()
   {
-    return view('content.sobre.ongs');
+    return view('sobre.ongs');
   }
 
   public function comoFunciona()
   {
-    return view('content.sobre.comoFunciona');
+    return view('sobre.comoFunciona');
   }
 }
