@@ -4,7 +4,7 @@ $navbarHideToggle = false;
 @endphp
 @extends('layouts/contentNavbarLayout')
 
-@section('title', 'Como Funciona')
+@section('title', 'Detalhes')
 
 @section('vendor-script')
 <script src="{{asset('assets/vendor/libs/masonry/masonry.js')}}"></script>
@@ -34,7 +34,9 @@ $navbarHideToggle = false;
                     <th> Castrado </th>
                     <th> Gênero </th>
                     <th> Peso </th>
-                    <th> Ações </th>
+                    @if(request()->session()->get('usuario'))
+                        <th> Ações </th>
+                    @endif
                 </tr>
             <tbody>
                 <tr>
@@ -46,7 +48,7 @@ $navbarHideToggle = false;
                     <td> {{ $pet -> castrado }} </td>
                     <td> {{ $pet -> genero }} </td>
                     <td> {{ $pet -> peso }} </td>
-                    <!--<td><img style="width: 100px;" src="{{asset('storage/'.$pet->imagem)}}"></td> -->
+                    @if(request()->session()->get('usuario'))
                     <td>
                         <a class="btn btn-outline-primary button" href="{{ route('pet.editar', $pet->id) }}">
                             <i class="fa-regular fa-pen-to-square"></i>
@@ -55,6 +57,7 @@ $navbarHideToggle = false;
                             <i class="fa-solid fa-trash"></i>
                         </a>
                     </td>
+                    @endif
                 </tr>
             </tbody>
         </table>

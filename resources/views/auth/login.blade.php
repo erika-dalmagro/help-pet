@@ -20,8 +20,8 @@
               <span class="app-brand-text demo text-body fw-bolder">{{config('variables.templateName')}}</span>
             </a>
           </div>
-          <h4 class="mb-2">Bem vindos ao {{config('variables.templateName')}}! 👋</h4>
-          <p class="mb-4">Digite seus dados para logar.</p>
+          <h4 class="mb-2 center">Bem vindo ao Help Pet! 👋</h4>
+          <p class="mb-4 center">Digite seus dados para logar.</p>
 
           <form id="formAuthentication" class="mb-3" method="POST" action="{{ route('autenticar') }}">
             @csrf
@@ -49,3 +49,9 @@
 </div>
 </div>
 @endsection
+
+<style>
+  .center {
+    text-align: center;
+  }
+</style>

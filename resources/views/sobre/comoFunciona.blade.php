@@ -21,7 +21,8 @@ $navbarHideToggle = false;
     <div class="card-body">
       <h5 class="card-title">1°: Encontre seu pet</h5>
       <p class="card-text">
-        Visite, entre em contato com ONGs/protetores ou veja nossa lista de animais disponíveis. Lá você irá conhecer todos pets disponíveis e criar uma conexão perfeita com seu novo bichinho em busca de um novo lar. Confira a lista de ONGs aqui:
+        Veja nossa lista de animais disponíveis. 
+        Lá você irá conhecer todos pets disponíveis e encontrar seu mais novo bichinho. Confira a lista de ONGs aqui:
       </p>
       <div class="centro">
           <a href="/ongs/" class="btn btn-primary">ONGs</a>
@@ -33,7 +34,11 @@ $navbarHideToggle = false;
     <div class="card-body">
       <h5 class="card-title">2°: Formulário de Interesse</h5>
       <p class="card-text">
-        Se for até uma ONG, faça a entrevista na hora com um voluntário da ONG/protetor. Caso não de, não tem problema, basta preencher o formulário de interesse que disponibilizamos <a href="">aqui</a>. Ele será avaliado e a ONG/protetor entrará em contato com você.
+        Depois de escolher, basta preencher o formulário de interesse. Ele será avaliado e, se aprovado, 
+        a ONG/protetor entrará em contato com você. 
+        <br>
+        <b>Lembre-se: a adoção é responsável!</b> 
+        Esteja comprometido com todos os cuidados necessários.
       </p>
     </div>
   </div>
@@ -42,7 +47,7 @@ $navbarHideToggle = false;
     <div class="card-body">
       <h5 class="card-title">3°: Avaliação da adoção</h5>
       <p class="card-text">
-       A ONG/protetor parceiro irá fazer a análise de perfil do adotante vs pet escolhido. Preenchendo os requisitos, você recebe a aprovação na hora (quando realizada entrevista na loja pelo voluntário da ONG/protetor) ou por telefone / e-mail caso seja preenchido o <a href="">formulário online</a>
+       A ONG/protetor parceiro irá fazer a análise de perfil do adotante vs pet escolhido. Preenchendo os requisitos, você recebe a aprovação por telefone ou e-mail</a>
       </p>
     </div>
   </div>
@@ -51,7 +56,7 @@ $navbarHideToggle = false;
     <div class="card-body">
       <h5 class="card-title">4°: Adoção Completa</h5>
       <p class="card-text">
-        Caso seja aprovado na hora pelo voluntário da ONG/protetor, você já pode levar seu pet para casa! Se enviou o formulário online, espere o contato e a aprovação. Com tudo certo, você busca seu pet em uma das ONGS no dia combinado. Simples assim!
+        Caso seja aprovado, é só esperar o contato! Com tudo certo, você pode buscar seu pet em uma das ONGS no dia combinado. Simples assim!
       </p>
     </div>
   </div>
