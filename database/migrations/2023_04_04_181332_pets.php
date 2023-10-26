@@ -6,9 +6,6 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::dropIfExists('pets');
@@ -19,17 +16,18 @@ return new class extends Migration
             
             $table->string('nome');
             $table->text('cor')->nullable();
+            $table->text('genero')->nullable();
+            $table->integer('peso')->nullable();
+            $table->integer('idade')->nullable();
+            $table->text('tamanho')->nullable();
+            $table->text('descricao')->nullable();
             $table->text('castrado')->nullable();
             $table->text('vacinado')->nullable();
-            $table->text('sexo')->nullable();
-            $table->integer('idade')->nullable();
+            $table->text('imagem')->nullable();
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('pets');

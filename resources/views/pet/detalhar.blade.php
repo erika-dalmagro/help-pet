@@ -62,7 +62,7 @@ $navbarHideToggle = false;
             </tbody>
         </table>
         <div class="center margin-form">
-            <button class="btn btn-primary btn-lg" type="button">Tenho interessse!</button>
+            <a class="btn btn-primary btn-lg" type="button" href="{{ route('formulario.adicionar',  $pet->id) }}">Tenho interessse!</a>
         </div>
     </div>
 </div>
