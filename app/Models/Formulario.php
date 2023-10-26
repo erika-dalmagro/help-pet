@@ -8,6 +8,7 @@ class Formulario extends Model
 {
    protected $fillable = [
     'nome',
+    'id_pet',
     'documento',
     'telefone',
     'email',
@@ -17,5 +18,6 @@ class Formulario extends Model
     'ficara_sozinho',
     'alergias',
     'comprometimento_saude',
+    'avaliacao',
   ];
 }

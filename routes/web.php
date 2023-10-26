@@ -29,5 +29,10 @@ Route::put('/pet/{id}', [App\Http\Controllers\PetController::class, 'atualizar']
 Route::get('/pet/detalhes/{id}', [App\Http\Controllers\PetController::class, 'detalhar'])->name('pet.detalhar');
 
 //Formulario
+Route::get('/formulario', [App\Http\Controllers\FormularioController::class, 'index'])->name('formulario.index');
 Route::get('/formulario/adicionar/{id}', [App\Http\Controllers\FormularioController::class, 'adicionar'])->name('formulario.adicionar');
 Route::post('/formulario', [App\Http\Controllers\FormularioController::class, 'salvar'])->name('formulario.salvar');
+Route::get('/formulario/excluir/{id}', [App\Http\Controllers\FormularioController::class, 'excluir'])->name('formulario.excluir');
+Route::get('/formulario/aprovar/{id}', [App\Http\Controllers\FormularioController::class, 'aprovar'])->name('formulario.aprovar');
+Route::get('/formulario/{id}', [App\Http\Controllers\FormularioController::class, 'reprovar'])->name('formulario.reprovar');
+Route::get('/formulario/detalhes/{id}', [App\Http\Controllers\FormularioController::class, 'detalhar'])->name('formulario.detalhar');

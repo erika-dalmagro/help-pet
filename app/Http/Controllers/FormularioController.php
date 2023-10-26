@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\File; 
 class FormularioController extends Controller
 {
-    public $pet;
+    public $formulario;
 
     public function _construct(Formulario $formulario)
     {
@@ -16,8 +16,9 @@ class FormularioController extends Controller
 
     public function index()
     {
-        $pet = Formulario::all();
-        return  view('pet.index', compact('pet'));
+        $formulario = Formulario::all();
+        
+        return view('formulario.index', compact('formulario'));
     }
 
     public function adicionar($id)
@@ -30,6 +31,7 @@ class FormularioController extends Controller
     {
         $this->validate($request, [
             'nome' => 'required',
+            'id_pet' => 'required',
             'documento' => 'required',
             'telefone' => 'required',
             'email' => 'required',
@@ -40,37 +42,27 @@ class FormularioController extends Controller
             'alergias' => 'required',
             'comprometimento_saude' => 'required',
         ]);
-      
+        
         $formulario = Formulario::create($request->all());
-     
         $formulario->save();
-        //return redirect()->route('formulario.detalhar', $formulario->id);
         return view('formulario.concluido', compact('formulario'));
     }
-
-    public function editar($id)
+    
+    public function aprovar($id)
     {
         $formulario = Formulario::find($id);
-        return view('formulario.editar', compact('formulario'));
+        $formulario->avaliado = 1;
+        $formulario->save();
+        $pet = Pet::find($formulario->id_pet);
+        $pet->adotado = 1;
+        $pet->save();
+        return redirect()->route('formulario.detalhar', $id);
     }
 
-    public function atualizar(Request $request, $id)
+    public function reprovar($id)
     {
-        $request->validate([
-            'nome' => 'required',
-            'documento' => 'required',
-            'telefone' => 'required',
-            'email' => 'required',
-            'teve_pet' => 'required',
-            'possui_animal' => 'required',
-            'possui_espaco' => 'required',
-            'ficara_sozinho' => 'required',
-            'alergias' => 'required',
-            'comprometimento_saude' => 'required',
-        ]);
-
         $formulario = Formulario::find($id);
-        $formulario->update($request->all());
+        $formulario->avaliado = 0;
         $formulario->save();
         return redirect()->route('formulario.detalhar', $id);
     }
@@ -78,7 +70,8 @@ class FormularioController extends Controller
     public function detalhar($id)
     {
         $formulario = Formulario::find($id);
-        return view('formulario.detalhar')->with('formulario', $formulario);
+        $pet = Pet::find($formulario->id_pet);
+        return view('formulario.detalhar')->with('formulario', $formulario)->with('pet', $pet);
     }
 
     public function excluir($id)

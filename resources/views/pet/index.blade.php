@@ -23,7 +23,6 @@ $navbarHideToggle = false;
             <div class="card-body">
                <h5 class="card-title"><b>{{ $pet->nome }}</b>, {{ $pet->genero }} </h5>
                <div class="centro" style="display: inline-block;">
-                  <!--<a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Quero adotar!</a>-->
                   <a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Mais informações</a>
                </div>
                <div class="centro" style="display: inline-block; margin-top: 10px;">

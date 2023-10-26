@@ -6,17 +6,12 @@ use Illuminate\Support\Facades\Schema;
 
 return new class extends Migration
 {
-    /**
-     * Run the migrations.
-     */
     public function up(): void
     {
         Schema::dropIfExists('formularios');
         Schema::create('formularios', function (Blueprint $table) {
             $table->id();
-            //$table->unsignedBigInteger('foto_id')->nullable() ;
-            //$table->foreign('foto_id')->references('id')->on('fotos')->onDelete("cascade");
-            
+            $table->int('id_pet');
             $table->string('nome');
             $table->text('documento')->nullable();
             $table->text('email')->nullable();
@@ -27,6 +22,7 @@ return new class extends Migration
             $table->boolean('ficara_sozinho')->nullable();
             $table->boolean('alergias')->nullable();
             $table->boolean('comprometimento_saude')->nullable();
+            $table->boolean('avaliacao')->nullable();
             $table->timestamps();
         });
     }

@@ -15,7 +15,7 @@ class PetController extends Controller
 
     public function index()
     {
-        $pet = Pet::all();
+        $pet = Pet::where('adotado', 0)->get(); //Remove da listagem os que já foram adotados
         return  view('pet.index', compact('pet'));
     }
 

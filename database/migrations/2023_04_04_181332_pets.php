@@ -24,6 +24,7 @@ return new class extends Migration
             $table->text('castrado')->nullable();
             $table->text('vacinado')->nullable();
             $table->text('imagem')->nullable();
+            $table->boolean('adotado')->nullable();
             $table->timestamps();
         });
     }

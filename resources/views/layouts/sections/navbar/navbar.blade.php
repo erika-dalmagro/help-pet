@@ -35,6 +35,9 @@ $navbarDetached = ($navbarDetached ?? '');
           <li class="nav-item lh-1 me-3">
             <a href="/pet/adicionar" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">CADASTRAR</a>
           </li>
+          <li class="nav-item lh-1 me-3">
+            <a href="/formulario" style="font-size: 15px; margin: 1rem; color: rgb(86, 106, 127);">FORMULÁRIOS</a>
+          </li>
           @endif
           <li class="nav-item lh-1 me-6">
             <a href="/quero-adotar" style="font-size: 15px; margin: 1rem;" type="button" class="btn rounded-pill btn-outline-primary">
