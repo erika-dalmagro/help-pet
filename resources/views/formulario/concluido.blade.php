@@ -18,7 +18,7 @@ $navbarHideToggle = false;
             <h4>Tudo certo por aqui!</h4>
             <div class="col-md" style="margin-right:100px; margin-left:100px;">
                 <img  class="center d-block rounded" style="width: 250px;" src="{{asset('storage/concluido.png')}}">
-                Agora é só esperar o retorno de um de nossos avaliadores.
+                Agora é só esperar o retorno de um de nossos avaliacaores.
             </div>
         </div>
     </div>

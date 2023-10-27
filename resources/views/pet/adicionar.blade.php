@@ -18,7 +18,7 @@ $navbarHideToggle = false;
 <div class="row">
   <div class="col-md-12">
     <div class="card mb-4">
-    <h2 class="ui center aligned header centro" style="margin-top: 30px;"> Formulário </h2>
+    <h2 class="ui center aligned header centro" style="margin-top: 30px;"> Formulário Pet</h2>
     
       <hr class="my-0">
       <div class="card-body">

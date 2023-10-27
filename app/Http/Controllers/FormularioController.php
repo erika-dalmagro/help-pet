@@ -51,7 +51,7 @@ class FormularioController extends Controller
     public function aprovar($id)
     {
         $formulario = Formulario::find($id);
-        $formulario->avaliado = 1;
+        $formulario->avaliacao = 1;
         $formulario->save();
         $pet = Pet::find($formulario->id_pet);
         $pet->adotado = 1;
@@ -62,7 +62,7 @@ class FormularioController extends Controller
     public function reprovar($id)
     {
         $formulario = Formulario::find($id);
-        $formulario->avaliado = 0;
+        $formulario->avaliacao = 0;
         $formulario->save();
         return redirect()->route('formulario.detalhar', $id);
     }

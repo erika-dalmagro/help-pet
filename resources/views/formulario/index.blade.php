@@ -38,9 +38,9 @@ $navbarHideToggle = false;
           <td> {{ $formulario->email }} </td>
           <td> {{ $formulario->telefone }} </td>
           <td>
-          @if($formulario->avaliado === null)
+          @if($formulario->avaliacao === null)
             <span class="badge bg-label-primary me-1">Aguardando Avaliação</span>
-          @elseif($formulario->avaliado === 1)
+          @elseif($formulario->avaliacao === 1)
             <span class="badge bg-label-success me-1">Aprovado</span>
           @else
             <span class="badge bg-label-danger me-1">Reprovado</span>

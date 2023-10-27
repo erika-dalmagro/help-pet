@@ -11,9 +11,6 @@ return new class extends Migration
         Schema::dropIfExists('pets');
         Schema::create('pets', function (Blueprint $table) {
             $table->id();
-            //$table->unsignedBigInteger('foto_id')->nullable() ;
-            //$table->foreign('foto_id')->references('id')->on('fotos')->onDelete("cascade");
-            
             $table->string('nome');
             $table->text('cor')->nullable();
             $table->text('genero')->nullable();
@@ -24,7 +21,7 @@ return new class extends Migration
             $table->text('castrado')->nullable();
             $table->text('vacinado')->nullable();
             $table->text('imagem')->nullable();
-            $table->boolean('adotado')->nullable();
+            $table->boolean('adotado')->default(0);
             $table->timestamps();
         });
     }

@@ -12,19 +12,62 @@ $navbarHideToggle = false;
 
 @section('content')
 <div class="space">
-    <h2 class="ui center aligned header"> Detalhes - Formulário de Adoção </h2>
+    <h3 class="ui center aligned header">  Formulário de Adoção  </h3>
     <img  class="center d-block rounded" style="width: 250px;" src="{{asset('storage/'.$pet->imagem)}}">
-    <div class="row"  style="margin-bottom: 40px; text-align: center;">
+    <div class="row" style="margin-bottom: 40px; text-align: center;">
         <div class="col-md">
-            <h4>{{ $pet -> nome }}</h4>
+            <h5 style="margin-bottom: 40px;">{{ $pet -> nome }}</h5>
             <div class="col-md" style="margin-right:100px; margin-left:100px;">
-            Interessado: {{ $formulario -> nome }}
-            <br>
-            Documento: {{ $formulario -> nome }}
-            <br>
-            Email: {{ $formulario -> nome }}
-            <br>
-            Telefone: {{ $formulario -> nome }}
+            <div class="row">
+                 <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card p-3 text-end">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                        <p>{{ $formulario -> nome }}</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                        Interessado
+                        </figcaption>
+                    </figure>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card p-3 text-end">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                        <p>{{ $formulario -> documento }}</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                        Documento
+                        </figcaption>
+                    </figure>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card p-3 text-end">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                        <p>{{ $formulario -> email }}</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                        E-mail
+                        </figcaption>
+                    </figure>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3 mb-3">
+                    <div class="card p-3 text-end">
+                    <figure class="mb-0">
+                        <blockquote class="blockquote">
+                        <p>{{ $formulario -> telefone }}</p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer mb-0 text-muted">
+                        Telefone
+                        </figcaption>
+                    </figure>
+                    </div>
+                </div>
+            </div>
             </div>
         </div>
     </div>
@@ -52,9 +95,9 @@ $navbarHideToggle = false;
                     <td> {{ $formulario -> alergias ? 'Sim' : 'Não'}} </td>
                     <td> {{ $formulario -> comprometimento_saude ? 'Sim' : 'Não'}} </td>
                     <td> 
-                        @if($formulario->avaliado === null)
+                        @if($formulario->avaliacao === null)
                             <span class="badge bg-label-primary me-1">Aguardando Avaliação</span>
-                        @elseif($formulario->avaliado === 1)
+                        @elseif($formulario->avaliacao === 1)
                             <span class="badge bg-label-success me-1">Aprovado</span>
                         @else
                             <span class="badge bg-label-danger me-1">Reprovado</span>

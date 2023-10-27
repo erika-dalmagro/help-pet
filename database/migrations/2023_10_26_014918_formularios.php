@@ -11,7 +11,7 @@ return new class extends Migration
         Schema::dropIfExists('formularios');
         Schema::create('formularios', function (Blueprint $table) {
             $table->id();
-            $table->int('id_pet');
+            $table->integer('id_pet');
             $table->string('nome');
             $table->text('documento')->nullable();
             $table->text('email')->nullable();
