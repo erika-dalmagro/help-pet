@@ -15,9 +15,9 @@ $navbarHideToggle = false;
    <h4 class="fw-bold py-3 mb-4">Disponíveis para Adoção</h4>
    <h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa de todos animaizinhos esperando por um lar.</h5>
 </div>
-<div class="space grid-container center">
-      @if($pet->count() > 0)
-         @foreach ($pet as $pet)
+@if($pet->count() > 0)
+   <div class="space grid-container center">
+      @foreach ($pet as $pet)
          <div class="card" >
             <img class="align-photo" src="{{asset('storage/'.$pet->imagem)}}">
             <div class="card-body">
@@ -37,12 +37,11 @@ $navbarHideToggle = false;
                </div>
             </div>
          </div>
-         @endforeach
-      @else
-      <h3 class="ui center aligned header"> Nenhum pet cadastrado!</h3>
-      @endif
-      <br>
-</div>
+      @endforeach
+   </div>
+@else
+   <h3 class="center"> Nenhum pet disponível!</h3>
+@endif
 @endsection
 <style>
    .grid-container {

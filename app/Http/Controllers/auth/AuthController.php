@@ -27,9 +27,8 @@ class AuthController extends Controller
         if ($usuario && $request->password == $usuario->senha) {
             $request->session()->start();
             session(['usuario' => $usuario]);
-            $pet = Pet::all();
-
-            return view('pet.index', compact('pet'));
+            $pet = Pet::where('adotado', 0)->get();
+            return redirect()->route('pet.index', compact('pet'));
         } else {
             $erro = true;
             return view('auth.login');
@@ -39,7 +38,7 @@ class AuthController extends Controller
     public function logout()
     {
         session()->flush();
-        $pet = Pet::all();
-        return view('pet.index', compact('pet'));
+        $pet = Pet::where('adotado', 0)->get();
+        return redirect()->route('pet.index', compact('pet'));
     }
 }

@@ -11,9 +11,7 @@ $navbarHideToggle = false;
 @endsection
 
 @section('content')
-
 @if(Session::get('usuario'))
-
 <div class="space"></div>
 <div class="row">
   <div class="col-md-12">
@@ -34,19 +32,27 @@ $navbarHideToggle = false;
             @enderror
 
             <div class="mb-3 col-md-6">
-                <label for="castrado">Castrado</label>
-                <input type="text" name="castrado" class="form-control" id="castrado" placeholder="Digite o dado" value="{{ old('castrado') }}" required>
+                <label for="castrado">Castrado?</label>
+                <select class="form-control" name="castrado" id="castrado" value="{{ old('castrado') }}" required>
+                    <option value="">Selecione...</option>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
             </div>
             @error('castrado')
-            <div class="alert alert-danger">Erro ao atualizar dado</div>
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
             @enderror
 
             <div class="mb-3 col-md-6">
-                <label for="vacinado">Vacinado</label>
-                <input type="text" name="vacinado" class="form-control" id="vacinado" placeholder="Digite o dado" value="{{ old('vacinado') }}" required>
+                <label for="vacinado">Vacinado?</label>
+                <select class="form-control" name="vacinado" id="vacinado" value="{{ old('vacinado') }}" required>
+                    <option value="">Selecione...</option>
+                    <option value="1">Sim</option>
+                    <option value="0">Não</option>
+                </select>
             </div>
             @error('vacinado')
-            <div class="alert alert-danger">Erro ao atualizar dado</div>
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
             @enderror
 
             <div class="mb-3 col-md-6">
@@ -67,18 +73,29 @@ $navbarHideToggle = false;
 
             <div class="mb-3 col-md-6">
                 <label for="tamanho">Tamanho</label>
-                <input type="text" name="tamanho" class="form-control" id="tamanho" placeholder="Selecione o Tamanho" value="{{ old('tamanho') }}" required>
+                <select class="form-control" name="tamanho" id="tamanho" value="{{ old('tamanho') }}" required>
+                    <option value="">Selecione...</option>
+                    <option value="PP">PP</option>
+                    <option value="P">P</option>
+                    <option value="M">M</option>
+                    <option value="G">G</option>
+                    <option value="GG">GG</option>
+                </select>
             </div>
             @error('tamanho')
-            <div class="alert alert-danger">Erro ao atualizar o tamanho</div>
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
             @enderror
 
             <div class="mb-3 col-md-6">
                 <label for="genero">Gênero</label>
-                <input type="text" name="genero" class="form-control" id="genero" placeholder="Digite o Gênero" value="{{ old('genero') }}" required>
+                <select class="form-control" name="genero" id="genero" value="{{ old('genero') }}" required>
+                    <option value="">Selecione...</option>
+                    <option value="Fêmea">Fêmea</option>
+                    <option value="Macho">Macho</option>
+                </select>
             </div>
             @error('genero')
-            <div class="alert alert-danger">Erro ao atualizar o Gênero</div>
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
             @enderror
 
             <div class="mb-3 col-md-6">
@@ -113,7 +130,7 @@ $navbarHideToggle = false;
 @else
 <div class="space">
     <div class="ui container huge">
-        <h1 class="ui center aligned header"> Você precisa ser um usuário administrador par acessar essa página.</h1>
+        <h2 class="ui center aligned header"> Você precisa ser um usuário administrador par acessar essa página.</h2>
     </div>
 </div>
 @endif

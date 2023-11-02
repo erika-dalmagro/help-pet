@@ -44,8 +44,8 @@ $navbarHideToggle = false;
                     <td> {{ $pet -> cor }} </td>
                     <td> {{ $pet -> idade }} </td>
                     <td> {{ $pet -> tamanho }} </td>
-                    <td> {{ $pet -> vacinado }} </td>
-                    <td> {{ $pet -> castrado }} </td>
+                    <td> {{ $pet -> vacinado == 1 ? 'Sim' : 'Não'}} </td>
+                    <td> {{ $pet -> castrado == 1 ? 'Sim' : 'Não'}} </td>
                     <td> {{ $pet -> genero }} </td>
                     <td> {{ $pet -> peso }} </td>
                     @if(request()->session()->get('usuario'))

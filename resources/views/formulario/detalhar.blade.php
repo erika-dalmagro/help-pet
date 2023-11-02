@@ -11,6 +11,7 @@ $navbarHideToggle = false;
 @endsection
 
 @section('content')
+@if(Session::get('usuario'))
 <div class="space">
     <h3 class="ui center aligned header">  Formulário de Adoção  </h3>
     <img  class="center d-block rounded" style="width: 250px;" src="{{asset('storage/'.$pet->imagem)}}">
@@ -95,9 +96,9 @@ $navbarHideToggle = false;
                     <td> {{ $formulario -> alergias ? 'Sim' : 'Não'}} </td>
                     <td> {{ $formulario -> comprometimento_saude ? 'Sim' : 'Não'}} </td>
                     <td> 
-                        @if($formulario->avaliacao === null)
+                        @if($formulario->avaliacao === 1)
                             <span class="badge bg-label-primary me-1">Aguardando Avaliação</span>
-                        @elseif($formulario->avaliacao === 1)
+                        @elseif($formulario->avaliacao === 2)
                             <span class="badge bg-label-success me-1">Aprovado</span>
                         @else
                             <span class="badge bg-label-danger me-1">Reprovado</span>
@@ -118,6 +119,13 @@ $navbarHideToggle = false;
         </table>
     </div>
 </div>
+@else
+<div class="space">
+    <div class="ui container huge">
+        <h2 class="ui center aligned header"> Você precisa ser um usuário administrador par acessar essa página.</h2>
+    </div>
+</div>
+@endif
 @endsection
 <style>
 .center {

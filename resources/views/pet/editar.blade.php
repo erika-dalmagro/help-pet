@@ -11,33 +11,12 @@ $navbarHideToggle = false;
 @endsection
 
 @section('content')
-
 @if(Session::get('usuario'))
-
 <div class="space"></div>
 <div class="row">
   <div class="col-md-12">
     <div class="card mb-4">
     <h2 class="ui center aligned header centro" style="margin-top: 30px;"> Formulário </h2>
-      <!--<h5 class="card-header">Imagem</h5>
-      <div class="card-body">
-        <div class="d-flex align-items-start align-items-sm-center gap-4">
-          <img src="{{ asset('storage/'.$pet->imagem)}}" class="d-block rounded" height="100" width="100" id="uploadedAvatar" />
-          <div class="button-wrapper">
-            <label for="upload" class="btn btn-primary me-2 mb-4" tabindex="0">
-              <span class="d-none d-sm-block">Upload new photo</span>
-              <i class="bx bx-upload d-block d-sm-none"></i>
-              <input type="file" id="upload" class="account-file-input" hidden accept="image/png, image/jpeg" />
-            </label>
-            <button type="button" class="btn btn-outline-secondary account-image-reset mb-4">
-              <i class="bx bx-reset d-block d-sm-none"></i>
-              <span class="d-none d-sm-block">Reset</span>
-            </button>
-
-            <p class="text-muted mb-0">Allowed JPG, GIF or PNG. Max size of 800K</p>
-          </div>
-        </div>
-      </div>-->
       <hr class="my-0">
       <div class="card-body">
         <form action="{{ route('pet.atualizar', $pet->id) }}" enctype="multipart/form-data" method="post" class="needs-validation" novalidate>
@@ -54,19 +33,28 @@ $navbarHideToggle = false;
 
             <div class="mb-3 col-md-6">
                 <label for="castrado">Castrado</label>
-                <input type="text" name="castrado" class="form-control" id="castrado" placeholder="Digite o dado" value="{{ old('castrado', $pet->castrado) }}" required>
+                <select class="form-control" name="castrado" id="castrado" required>
+                    <option value="">Selecione...</option>
+                    <option value="1" @if ($pet->castrado == 1) selected @endif>Sim</option>
+                    <option value="0" @if ($pet->castrado == 0) selected @endif>Não</option>
+                </select>
             </div>
             @error('castrado')
-            <div class="alert alert-danger">Erro ao atualizar dado</div>
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
             @enderror
 
             <div class="mb-3 col-md-6">
                 <label for="vacinado">Vacinado</label>
-                <input type="text" name="vacinado" class="form-control" id="vacinado" placeholder="Digite o dado" value="{{ old('vacinado', $pet->vacinado) }}" required>
+                <select class="form-control" name="vacinado" id="vacinado" required>
+                    <option value="">Selecione...</option>
+                    <option value="1" @if ($pet->castrado == 1) selected @endif>Sim</option>
+                    <option value="0" @if ($pet->castrado == 0) selected @endif>Não</option>
+                </select>
             </div>
             @error('vacinado')
-            <div class="alert alert-danger">Erro ao atualizar dado</div>
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
             @enderror
+
 
             <div class="mb-3 col-md-6">
                 <label for="cor">Cor</label>
@@ -85,19 +73,30 @@ $navbarHideToggle = false;
             @enderror
 
             <div class="mb-3 col-md-6">
-                <label for="tamanho">Tamanho</label>
-                <input type="text" name="tamanho" class="form-control" id="tamanho" placeholder="Selecione o Tamanho" value="{{ old('tamanho', $pet->tamanho) }}" required>
+                <label for="tamanho">Vacinado</label>
+                <select class="form-control" name="tamanho" id="tamanho" required>
+                    <option value="">Selecione...</option>
+                    <option value="PP" @if ($pet->tamanho == 'PP') selected @endif>PP</option>
+                    <option value="P" @if ($pet->tamanho == 'P') selected @endif>P</option>
+                    <option value="M" @if ($pet->tamanho == 'M') selected @endif>M</option>
+                    <option value="G" @if ($pet->tamanho == 'G') selected @endif>G</option>
+                    <option value="GG" @if ($pet->tamanho == 'GG') selected @endif>GG</option>
+                </select>
             </div>
             @error('tamanho')
-            <div class="alert alert-danger">Erro ao atualizar o tamanho</div>
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
             @enderror
 
             <div class="mb-3 col-md-6">
                 <label for="genero">Gênero</label>
-                <input type="text" name="genero" class="form-control" id="genero" placeholder="Digite o Gênero" value="{{ old('genero', $pet->genero) }}" required>
+                <select class="form-control" name="genero" id="genero" required>
+                    <option value="">Selecione...</option>
+                    <option value="Fêmea" @if ($pet->genero == 'Fêmea') selected @endif>Fêmea</option>
+                    <option value="Macho" @if ($pet->genero == 'Macho') selected @endif>Macho</option>
+                </select>
             </div>
             @error('genero')
-            <div class="alert alert-danger">Erro ao atualizar o Gênero</div>
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
             @enderror
 
             <div class="mb-3 col-md-6">

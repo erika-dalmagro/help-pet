@@ -130,16 +130,17 @@ $navbarHideToggle = false;
         </form>
     </div>
 </div>
-
 @endsection
 
 <style>
     .centro {
       text-align: center;
     }
+
     div .form-group{
         margin: 10px;
     }
+    
     .form-group label{
         margin-bottom: 6px;
     }

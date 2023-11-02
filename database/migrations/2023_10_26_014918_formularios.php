@@ -22,14 +22,11 @@ return new class extends Migration
             $table->boolean('ficara_sozinho')->nullable();
             $table->boolean('alergias')->nullable();
             $table->boolean('comprometimento_saude')->nullable();
-            $table->boolean('avaliacao')->nullable();
+            $table->boolean('avaliacao')->default(1);
             $table->timestamps();
         });
     }
 
-    /**
-     * Reverse the migrations.
-     */
     public function down(): void
     {
         Schema::dropIfExists('formularios');

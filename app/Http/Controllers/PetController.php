@@ -109,7 +109,7 @@ class PetController extends Controller
         $image_path = public_path() . '/storage/' . $pet->imagem;
         File::delete($image_path);
         Pet::destroy($id);
-        $pet = Pet::all();
+        $pet = Pet::where('adotado', 0)->get();
         return redirect()->route('pet.index', compact('pet'));
     }
 }

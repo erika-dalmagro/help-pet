@@ -14,12 +14,20 @@ class FormularioController extends Controller
         $this->formulario = $formulario;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $formulario = Formulario::all();
-        
-        return view('formulario.index', compact('formulario'));
+        $selectedStatus = $request->input('avaliacao');
+        $formulario = Formulario::query();
+
+        if ($selectedStatus) {
+            $formulario->where('avaliacao', $selectedStatus);
+        }
+
+        $formulario = $formulario->get();
+
+        return view('formulario.index', compact('formulario', 'selectedStatus'));
     }
+
 
     public function adicionar($id)
     {
@@ -51,7 +59,7 @@ class FormularioController extends Controller
     public function aprovar($id)
     {
         $formulario = Formulario::find($id);
-        $formulario->avaliacao = 1;
+        $formulario->avaliacao = 2;
         $formulario->save();
         $pet = Pet::find($formulario->id_pet);
         $pet->adotado = 1;
@@ -62,7 +70,7 @@ class FormularioController extends Controller
     public function reprovar($id)
     {
         $formulario = Formulario::find($id);
-        $formulario->avaliacao = 0;
+        $formulario->avaliacao = 3;
         $formulario->save();
         return redirect()->route('formulario.detalhar', $id);
     }
