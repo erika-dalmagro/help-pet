@@ -33,6 +33,7 @@ $navbarHideToggle = false;
 <div class="card">
     <h5 class="card-header">Formulários</h5>
     <div class="table-responsive text-nowrap">
+      @if($formulario->count() > 0)
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -44,7 +45,6 @@ $navbarHideToggle = false;
                 </tr>
             </thead>
             <tbody class="table-border-bottom-0">
-                @if($formulario->count() > 0)
                 @foreach ($formulario as $formulario)
                 <tr>
                     <td><strong>{{ $formulario->nome }}</strong></td>
@@ -71,17 +71,19 @@ $navbarHideToggle = false;
                 @endforeach
                 @else
                 <h3 class="ui center aligned header">Nenhum formulário encontrado!</h3>
+                <br>
+                <br>
                 @endif
             </tbody>
         </table>
+        @else
+          <div class="space">
+            <div class="ui container huge">
+              <h2 class="ui center aligned header"> Você precisa ser um usuário administrador par acessar essa página.</h2>
+            </div>
+          </div>
+        @endif
     </div>
-  @else
-  <div class="space">
-      <div class="ui container huge">
-          <h2 class="ui center aligned header"> Você precisa ser um usuário administrador par acessar essa página.</h2>
-      </div>
-  </div>
-@endif
 </div>
 @endsection
 
