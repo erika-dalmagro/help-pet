@@ -49,9 +49,3 @@
 </div>
 </div>
 @endsection
-
-<style>
-  .center {
-    text-align: center;
-  }
-</style>

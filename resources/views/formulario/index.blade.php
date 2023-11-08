@@ -86,13 +86,3 @@ $navbarHideToggle = false;
     </div>
 </div>
 @endsection
-
-<style>
-  .center {
-      text-align: center;
-  }
-
-  .filter-label {
-      font-weight: bold;
-  }
-</style>

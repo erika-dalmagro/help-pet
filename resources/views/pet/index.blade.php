@@ -22,10 +22,10 @@ $navbarHideToggle = false;
             <img class="align-photo" src="{{asset('storage/'.$pet->imagem)}}">
             <div class="card-body">
                <h5 class="card-title"><b>{{ $pet->nome }}</b>, {{ $pet->genero }} </h5>
-               <div class="centro" style="display: inline-block;">
+               <div class="center" style="display: inline-block;">
                   <a href="/pet/detalhes/{{$pet->id}}" class="btn btn-primary">Mais informações</a>
                </div>
-               <div class="centro" style="display: inline-block; margin-top: 10px;">
+               <div class="center" style="display: inline-block; margin-top: 10px;">
                   @if(Session::get('usuario'))
                      <a class="btn btn-outline-primary ui button" href="{{ route('pet.editar', $pet->id) }}">
                         <i class="fa-regular fa-pen-to-square"></i>
@@ -43,23 +43,3 @@ $navbarHideToggle = false;
    <h3 class="center"> Nenhum pet disponível!</h3>
 @endif
 @endsection
-<style>
-   .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 30px;
-   }
-
-   .center {
-      text-align: center;
-   }
-
-   .align-photo {
-      align-self: center;
-      width: 220px;
-      height: 160px;
-      position: relative;
-      top: 20px;
-      margin-bottom: 10px;
-   }
-</style>

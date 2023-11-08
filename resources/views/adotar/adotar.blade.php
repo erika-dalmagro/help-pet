@@ -4,7 +4,7 @@ $navbarHideToggle = false;
 @endphp
 @extends('layouts/contentNavbarLayout')
 
-@section('title', 'Cards basic   - UI elements')
+@section('title', 'Adotar')
 
 @section('vendor-script')
 <script src="{{asset('assets/vendor/libs/masonry/masonry.js')}}"></script>
@@ -12,7 +12,6 @@ $navbarHideToggle = false;
 
 @section('content')
 <h4 class="fw-bold py-3 mb-4">Disponíveis para Adoção</h4>
-
 
 <!-- Horizontal -->
 <h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa de todos animaizinhos esperando por um lar.</h5>
@@ -99,5 +98,4 @@ $navbarHideToggle = false;
     </div>
   </div>
 </div>
-
 @endsection

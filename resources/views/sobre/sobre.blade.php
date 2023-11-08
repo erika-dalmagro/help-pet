@@ -111,8 +111,6 @@ $navbarHideToggle = false;
     </div>
   </div>
 </div>
-
 <h5>Adote! <h5>
 <h6 class="pb-1 mb-4">Estão todos esperando por muito amor e carinho! <h6>
-
 @endsection

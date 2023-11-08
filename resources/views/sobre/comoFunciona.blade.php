@@ -24,7 +24,7 @@ $navbarHideToggle = false;
         Veja nossa lista de animais disponíveis. 
         Lá você irá conhecer todos pets disponíveis e encontrar seu mais novo bichinho. Confira a lista de ONGs aqui:
       </p>
-      <div class="centro">
+      <div class="center">
           <a href="/ongs/" class="btn btn-primary">ONGs</a>
       </div>
     </div>
@@ -62,23 +62,3 @@ $navbarHideToggle = false;
   </div>
 </div>
 @endsection
-<style>
-   .grid-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-      gap: 14px;
-   }
-
-   .center {
-      text-align: center;
-   }
-
-   .align-photo {
-      align-self: center;
-      width: 150px;
-      height: 150px;
-      position: relative;
-      top: 20px;
-      margin-bottom: 10px;
-   }
-</style>

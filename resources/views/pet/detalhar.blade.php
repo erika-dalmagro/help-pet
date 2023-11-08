@@ -67,15 +67,3 @@ $navbarHideToggle = false;
     </div>
 </div>
 @endsection
-<style>
-.center {
- text-align: center;
-}
-
-img.center {
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-  margin-bottom: 14px;
-}
-</style>

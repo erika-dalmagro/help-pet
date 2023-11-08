@@ -16,7 +16,7 @@ $navbarHideToggle = false;
 <div class="row">
   <div class="col-md-12">
     <div class="card mb-4">
-    <h2 class="ui center aligned header centro" style="margin-top: 30px;"> Formulário de Interesse - {{ $pet -> nome }}</h2>
+    <h2 class="ui center aligned header center" style="margin-top: 30px;"> Formulário de Interesse - {{ $pet -> nome }}</h2>
     <img  class="center d-block rounded" style="width: 250px;" src="{{asset('storage/'.$pet->imagem)}}">
       <hr class="my-0">
       <div class="card-body">
@@ -124,35 +124,10 @@ $navbarHideToggle = false;
             <div class="alert alert-danger">Erro ao atualizar os dados</div>
             @enderror
 
-            <div class="centro margin-form">
+            <div class="center margin-form">
                 <button type="submit" class="btn center aligned btn-primary ui button">Enviar</button>
             </div>
         </form>
     </div>
 </div>
 @endsection
-
-<style>
-    .centro {
-      text-align: center;
-    }
-
-    div .form-group{
-        margin: 10px;
-    }
-    
-    .form-group label{
-        margin-bottom: 6px;
-    }
-
-    .center {
-        text-align: center;
-    }
-
-    img.center {
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
-        margin-bottom: 14px;
-    }
-</style>

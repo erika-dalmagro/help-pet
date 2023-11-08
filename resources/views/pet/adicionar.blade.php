@@ -16,7 +16,7 @@ $navbarHideToggle = false;
 <div class="row">
   <div class="col-md-12">
     <div class="card mb-4">
-    <h2 class="ui center aligned header centro" style="margin-top: 30px;"> Formulário Pet</h2>
+    <h2 class="ui center aligned header center" style="margin-top: 30px;"> Formulário Pet</h2>
     
       <hr class="my-0">
       <div class="card-body">
@@ -121,7 +121,7 @@ $navbarHideToggle = false;
             @error('imagem')
             <div class="alert alert-danger">Erro ao atualizar a imagem</div>
             @enderror
-            <div class="centro margin-form">
+            <div class="center margin-form">
                 <button type="submit" class="btn center aligned btn-primary ui button">Enviar</button>
             </div>
         </form>
@@ -135,15 +135,3 @@ $navbarHideToggle = false;
 </div>
 @endif
 @endsection
-
-<style>
-    .centro {
-      text-align: center;
-    }
-    div .form-group{
-        margin: 10px;
-    }
-    .form-group label{
-        margin-bottom: 6px;
-    }
-</style>
