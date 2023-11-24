@@ -22,6 +22,7 @@ return new class extends Migration
             $table->text('vacinado');
             $table->text('imagem')->nullable();
             $table->boolean('adotado')->default(0);
+            $table->text('tipo');
             $table->timestamps();
         });
     }

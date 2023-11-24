@@ -17,7 +17,6 @@ $navbarHideToggle = false;
 @if(Session::get('usuario'))
     <h4 class="fw-bold py-3 mb-4">Formulários de Adoção</h4>
     <h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa de todos os formulários enviados.</h5>
-    
     <form method="get" action="{{ route('formulario.index') }}">
         <label for="avaliacao" class="filter-label">Filtrar por Status:</label>
         <select name="avaliacao" id="avaliacao">
@@ -29,7 +28,7 @@ $navbarHideToggle = false;
         <button class="btn btn-primary ui button" type="submit">Filtrar</button>
     </form>
 </div>
-
+<br>
 <div class="card">
     <h5 class="card-header">Formulários</h5>
     <div class="table-responsive text-nowrap">

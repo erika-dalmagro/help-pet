@@ -32,6 +32,20 @@ $navbarHideToggle = false;
             @enderror
 
             <div class="mb-3 col-md-6">
+                <label for="tipo">Selecione o tipo do animal</label>
+                <select class="form-control" name="tipo" id="tipo" value="{{ old('tipo') }}" required>
+                    <option value="">Selecione...</option>
+                    <option value="1">Cachorro</option>
+                    <option value="2">Gato</option>
+                    <option value="3">Roedor</option>
+                    <option value="4">Outro</option>
+                </select>
+            </div>
+            @error('tipo')
+            <div class="alert alert-danger">Erro ao atualizar os dados</div>
+            @enderror
+
+            <div class="mb-3 col-md-6">
                 <label for="castrado">Castrado?</label>
                 <select class="form-control" name="castrado" id="castrado" value="{{ old('castrado') }}" required>
                     <option value="">Selecione...</option>

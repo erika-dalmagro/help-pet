@@ -27,6 +27,7 @@ $navbarHideToggle = false;
             <thead>
                 <tr>
                     <th> Nome </th>
+                    <th> Tipo </th>
                     <th> Cor </th>
                     <th> Idade </th>
                     <th> Tamanho </th>
@@ -41,6 +42,7 @@ $navbarHideToggle = false;
             <tbody>
                 <tr>
                     <td> {{ $pet -> nome }} </td>
+                    <td> {{ ($pet->tipo == 1) ? 'Cachorro' : (($pet->tipo == 2) ? 'Gato' : (($pet->tipo == 3) ? 'Roedor' : (($pet->tipo == 4) ? 'Outro' : ''))) }} </td>
                     <td> {{ $pet -> cor }} </td>
                     <td> {{ $pet -> idade }} </td>
                     <td> {{ $pet -> tamanho }} </td>

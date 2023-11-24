@@ -14,7 +14,24 @@ $navbarHideToggle = false;
 <div class="center">
    <h4 class="fw-bold py-3 mb-4">Disponíveis para Adoção</h4>
    <h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa de todos animaizinhos esperando por um lar.</h5>
+
+   <h6 class="pb-1 mb-4">Já ajudamos <b>{{ $petsAdotados }}</b> animaizinhos a acharem um lar! </h6>
+   <form method="get" action="{{ route('pet.index') }}">
+        <label for="tipo" class="filter-label">Filtrar por:</label>
+        <select name="tipo" id="tipo">
+            <option value="">Todos</option>
+            <option value="1" @if ($selectedTipo == 1) selected @endif>Cachorro</option>
+            <option value="2" @if ($selectedTipo == 2) selected @endif>Gato</option>
+            <option value="3" @if ($selectedTipo == 3) selected @endif>Roedor</option>
+            <option value="4" @if ($selectedTipo == 4) selected @endif>Outro</option>
+            @if(Session::get('usuario'))
+            <option value="5" @if ($selectedTipo == 5) selected @endif>Adotados</option>
+            @endif
+        </select>
+        <button class="btn btn-primary ui button" type="submit">Filtrar</button>
+    </form>
 </div>
+<br>
 @if($pet->count() > 0)
    <div class="space grid-container center">
       @foreach ($pet as $pet)

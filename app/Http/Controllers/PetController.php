@@ -13,10 +13,23 @@ class PetController extends Controller
         $this->pet = $pet;
     }
 
-    public function index()
+    public function index(Request $request)
     {
-        $pet = Pet::where('adotado', 0)->get(); //Remove da listagem os que já foram adotados
-        return  view('pet.index', compact('pet'));
+        $petsAdotados = Pet::query()->where('adotado', 1)->count();
+        $selectedTipo = $request->input('tipo');
+        $pet = Pet::query();
+
+        if ($selectedTipo) {
+            if($selectedTipo == 5){ //Exceção para os admins verem os já adotados
+                $pet = $pet->where('adotado', 1)->get();
+            } else {
+                $pet = $pet->where('tipo', $selectedTipo)->where('adotado', 0)->get();
+            }
+        } else {
+            $pet = $pet->get()->where('adotado', 0); //Adotado = 0 -> Não adotado
+        }
+        
+        return  view('pet.index', compact('pet', 'selectedTipo', 'petsAdotados'));
     }
 
     public function adicionar()
@@ -36,6 +49,7 @@ class PetController extends Controller
             'cor' => 'required',
             'tamanho' => 'required',
             'peso' => 'required',
+            'tipo' => 'required',
             'imagem' => 'required',
             'imagem.*' => 'mimes:doc,pdf,docx,zip,png,jpge,jpg'
         ]);
@@ -46,6 +60,7 @@ class PetController extends Controller
             $file->move(public_path() . '/storage/', $name);
             $data = $name;
         }
+
         $pet = Pet::create($request->all());
         if ($file) {
             $pet->imagem = $data;
@@ -72,28 +87,25 @@ class PetController extends Controller
             'idade' => 'required',
             'tamanho' => 'required',
             'peso' => 'required',
-            'imagem' => 'required',
+            'tipo' => 'required',
             'imagem.*' => 'mimes:doc,pdf,docx,zip,png,jpge,jpg'
         ]);
 
         $pet = Pet::find($id);
-       
+        
         if ($request->hasfile('imagem')) {
             $file = $request->file('imagem');
-           
             $name = time() . '.' . $file->extension();
             $file->move(public_path() . '/storage/', $name);
             $data = $name;
             $image_path = public_path() . '/storage/' . $pet->imagem;
             File::delete($image_path);
-        }
-        $pet->update($request->all());
-
-        if ($file) {
             $pet->imagem = $data;
         }
-        
+
+        $pet->update($request->all());
         $pet->save();
+
         return redirect()->route('pet.detalhar', $id);
     }
 
@@ -112,4 +124,5 @@ class PetController extends Controller
         $pet = Pet::where('adotado', 0)->get();
         return redirect()->route('pet.index', compact('pet'));
     }
+    
 }

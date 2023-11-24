@@ -17,5 +17,6 @@ class Pet extends Model
     'castrado',
     'vacinado',
     'adotado',
+    'tipo',
   ];
 }

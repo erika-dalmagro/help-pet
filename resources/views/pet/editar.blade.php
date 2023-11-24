@@ -23,6 +23,25 @@ $navbarHideToggle = false;
             @csrf
             @method('PUT')
             <div class="row">
+            <div style="display:flex; flex-direction: column; align-items:center;">        
+                @if($pet->imagem)
+                    <div class="mb-3 col-md-6">
+                        <h4 class="ui center aligned header"> Imagem Atual </h4>
+                        <img class="center d-block rounded" style="width: 250px;" src="{{asset('storage/'.$pet->imagem)}}"  id="imagem-preview">
+                    </div>
+                @endif
+
+                <div class="mb-3 col-md-6">
+                    <label for="imagem">Nova Imagem</label>
+                    <input type="file" name="imagem" class="form-control" id="imagem" onchange="previewImage()">
+                    <img class="center d-block rounded" style="width: 250px; display: none;" id="nova-imagem-preview">
+                </div>
+
+                @error('imagem')
+                <div class="alert alert-danger">Erro ao atualizar a Imagem</div>
+                @enderror
+            </div>
+
             <div class="mb-3 col-md-6">
                 <label for="nome">Nome</label>
                 <input type="text" name="nome" class="form-control" id="nome" placeholder="Digite o nome" value="{{ old('nome', $pet->nome) }}" required>
@@ -32,7 +51,21 @@ $navbarHideToggle = false;
             @enderror
 
             <div class="mb-3 col-md-6">
-                <label for="castrado">Castrado</label>
+                <label for="tipo">Selecione o tipo do animal</label>
+                <select class="form-control" name="tipo" id="tipo" required>
+                    <option value="">Selecione...</option>
+                    <option value="1" @if ($pet->tipo == 1) selected @endif>Cachorro</option>
+                    <option value="2" @if ($pet->tipo == 2) selected @endif>Gato</option>
+                    <option value="3" @if ($pet->tipo == 3) selected @endif>Roedor</option>
+                    <option value="4" @if ($pet->tipo == 4) selected @endif>Outro</option>
+                </select>
+            </div>
+            @error('castrado')
+            <div class="alert alert-danger">Erro ao atualizar o dado</div>
+            @enderror
+
+            <div class="mb-3 col-md-6">
+                <label for="castrado">Castrado?</label>
                 <select class="form-control" name="castrado" id="castrado" required>
                     <option value="">Selecione...</option>
                     <option value="1" @if ($pet->castrado == 1) selected @endif>Sim</option>
@@ -44,7 +77,7 @@ $navbarHideToggle = false;
             @enderror
 
             <div class="mb-3 col-md-6">
-                <label for="vacinado">Vacinado</label>
+                <label for="vacinado">Vacinado?</label>
                 <select class="form-control" name="vacinado" id="vacinado" required>
                     <option value="">Selecione...</option>
                     <option value="1" @if ($pet->castrado == 1) selected @endif>Sim</option>
@@ -73,7 +106,7 @@ $navbarHideToggle = false;
             @enderror
 
             <div class="mb-3 col-md-6">
-                <label for="tamanho">Vacinado</label>
+                <label for="tamanho">Tamanho</label>
                 <select class="form-control" name="tamanho" id="tamanho" required>
                     <option value="">Selecione...</option>
                     <option value="PP" @if ($pet->tamanho == 'PP') selected @endif>PP</option>
@@ -115,13 +148,6 @@ $navbarHideToggle = false;
             <div class="alert alert-danger">Erro ao atualizar a Descrição</div>
             @enderror
 
-            <div class="mb-3 col-md-6">
-                <label for="imagem">Imagem</label>
-                <input type="file" name="imagem" class="form-control" id="imagem" required>
-            </div>
-            @error('imagem')
-            <div class="alert alert-danger">Erro ao atualizar a imagem</div>
-            @enderror
             <div class="center margin-form">
                 <button type="submit" class="btn center aligned btn-primary ui button">Enviar</button>
             </div>
@@ -136,3 +162,21 @@ $navbarHideToggle = false;
 </div>
 @endif
 @endsection
+<script>
+   function previewImage() {
+        var input = document.getElementById('imagem');
+        var existingImage = document.getElementById('imagem-preview');
+
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                existingImage.src = e.target.result;
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        } else {
+            existingImage.src = '';
+        }
+    }
+</script>
