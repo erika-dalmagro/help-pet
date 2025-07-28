@@ -11,14 +11,14 @@ $navbarHideToggle = false;
 @endsection
 
 @section('content')
-<div class="center">
-   <h4 class="fw-bold py-3 mb-4">Como funciona a Adoção Responsável?</h4>
-   <h5 class="pb-1 mb-4">Aqui você pode ter uma visão completa das etapas de adoção de seu novo animalzinho.</h5>
+<div class="text-center mt-2 mb-4">
+   <h4 class="fw-bold mb-4">Como funciona a Adoção Responsável?</h4>
+   <h5 class="pb-1">Aqui você pode ter uma visão completa das etapas de adoção de seu novo animalzinho.</h5>
 </div>
-<div class="space grid-container center">
-  <div class="card" >
-    <img class="align-photo" src="{{asset('assets/img/elements/passo1.png')}}">
-    <div class="card-body">
+<div class="space grid-container center justify">
+  <div class="card pt-2 d-flex flex-column align-items-center" >
+    <img class="m-4 align-photo" src="{{asset('assets/img/elements/passo1.png')}}">
+    <div class="p-4">
       <h5 class="card-title">1°: Encontre seu pet</h5>
       <p class="card-text">
         Veja nossa lista de animais disponíveis. 
@@ -29,9 +29,9 @@ $navbarHideToggle = false;
       </div>
     </div>
   </div>
-  <div class="card" >
-    <img class="align-photo"src="{{asset('assets/img/elements/passo2.png')}}">
-    <div class="card-body">
+  <div class="card pt-2 d-flex flex-column align-items-center" >
+    <img class="m-4 align-photo"src="{{asset('assets/img/elements/passo2.png')}}">
+    <div class="p-4">
       <h5 class="card-title">2°: Formulário de Interesse</h5>
       <p class="card-text">
         Depois de escolher, basta preencher o formulário de interesse. Ele será avaliado e, se aprovado, 
@@ -42,18 +42,18 @@ $navbarHideToggle = false;
       </p>
     </div>
   </div>
-  <div class="card" >
-    <img class="align-photo" src="{{asset('assets/img/elements/passo3.png')}}">
-    <div class="card-body">
+  <div class="card pt-2 d-flex flex-column align-items-center" >
+    <img class="m-4 align-photo" src="{{asset('assets/img/elements/passo3.png')}}">
+    <div class="p-4">
       <h5 class="card-title">3°: Avaliação da adoção</h5>
       <p class="card-text">
        A ONG/protetor parceiro irá fazer a análise de perfil do adotante vs pet escolhido. Preenchendo os requisitos, você recebe a aprovação por telefone ou e-mail</a>
       </p>
     </div>
   </div>
-  <div class="card" >
-    <img class="align-photo" src="{{asset('assets/img/elements/passo4.png')}}">
-    <div class="card-body">
+  <div class="card pt-2 d-flex flex-column align-items-center" ><!--justify-content-between -->
+    <img class="m-4 align-photo" src="{{asset('assets/img/elements/passo4.png')}}">
+    <div class="p-4">
       <h5 class="card-title">4°: Adoção Completa</h5>
       <p class="card-text">
         Caso seja aprovado, é só esperar o contato! Com tudo certo, você pode buscar seu pet em uma das ONGS no dia combinado. Simples assim!

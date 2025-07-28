@@ -11,9 +11,9 @@ $navbarHideToggle = false;
 @endsection
 
 @section('content')
-<div class="center">
-  <h4 class="fw-bold py-3 mb-4">ONGs Parceiras</h4>
-  <h5 class="pb-1 mb-4">Aqui você pode ter uma visão das ONG apoiadoras do projeto.</h5>
+<div class="text-center mt-2 mb-4">
+  <h4 class="fw-bold mb-4">ONGs Parceiras</h4>
+  <h5 class="pb-1">Aqui você pode ter uma visão das ONG apoiadoras do projeto.</h5>
 </div>
 <div class="row mb-5">
   <div class="col-md">
