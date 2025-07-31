@@ -1,4 +1,4 @@
-# 🇧🇷 Projeto de Faculdade - Help Pet 
+# 🇧🇷 Sobre o Projeto - Help Pet (PT-BR)
 
 Este é um projeto antigo, desenvolvido para uma das disciplinas do meu curso de graduação. O objetivo era criar uma plataforma para conectar ONGs e protetores de animais com pessoas interessadas em adotar um novo amigo.
 
@@ -18,7 +18,7 @@ Este é um projeto antigo, desenvolvido para uma das disciplinas do meu curso de
 
 ---
 
-# 🇺🇸 College Project - Help Pet
+# 🇺🇸 About the Project - Help Pet (EN-US) 
 
 This is an old project, developed for one of the courses in my undergraduate degree. The goal was to create a platform to connect NGOs and animal protectors with people interested in adopting a new friend.
 
